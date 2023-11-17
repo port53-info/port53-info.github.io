@@ -9724,3 +9724,6 @@ h6 {
 
 ul.share {
   display: none; }
+
+footer .powered-by {
+  display: none; }
