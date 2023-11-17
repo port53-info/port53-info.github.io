@@ -1,0 +1,828 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Data | DMT</title>
+    <link>https://example.com/data/</link>
+      <atom:link href="https://example.com/data/index.xml" rel="self" type="application/rss+xml" />
+    <description>Data</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Tue, 14 Nov 2023 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://example.com/media/icon_hu19319373e473535c7b00a31416423031_103897_512x512_fill_lanczos_center_3.png</url>
+      <title>Data</title>
+      <link>https://example.com/data/</link>
+    </image>
+    
+    <item>
+      <title>Open Encrypted DNS Servers</title>
+      <link>https://example.com/data/open-encrypted-dns-servers/</link>
+      <pubDate>Tue, 14 Nov 2023 00:00:00 +0000</pubDate>
+      <guid>https://example.com/data/open-encrypted-dns-servers/</guid>
+      <description>&lt;p&gt;We scan the IPv4 address space for open DNS servers supporting DNS-over-TLS (DoT, &lt;a href=&#34;https://datatracker.ietf.org/doc/html/rfc7858&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;RFC 7858&lt;/a&gt;), DNS-over-HTTPS (DoH, &lt;a href=&#34;https://datatracker.ietf.org/doc/html/rfc8484&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;RFC 8484&lt;/a&gt;), DNS-over-QUIC (DoQ, &lt;a href=&#34;https://datatracker.ietf.org/doc/html/rfc9250&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;RFC 9250&lt;/a&gt;), and DoH3.&lt;/p&gt;
+&lt;p&gt;Here we provide statistics and lists of open encrypted DNS servers, including their IP addresses, authentication domain names (ADN), locations, and certificate verification status.&lt;/p&gt;
+&lt;p&gt;Our scan is performed monthly and dates back to December 2021.&lt;/p&gt;
+&lt;h1 id=&#34;related-publications&#34;&gt;Related publications:&lt;/h1&gt;
+&lt;blockquote&gt;
+&lt;p&gt;[IMC &amp;lsquo;19] Chaoyi Lu, Baojun Liu, Zhou Li, Shuang Hao, Haixin Duan, Mingming Zhang, Chunying Leng, Ying Liu, Zaifeng Zhang, and Jianping Wu. An End-to-End, Large-Scale Measurement of DNS-over-Encryption: How Far Have We Come?. In Proceedings of the 2019 ACM Internet Measurement Conference
+&lt;a class=&#34;btn btn-outline-primary btn-page-header&#34; href=&#34;https://example.com/files/3355369.3355580.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Paper&lt;/a&gt;
+&lt;a class=&#34;btn btn-outline-primary btn-page-header&#34; href=&#34;https://example.com/files/acm_3355369.3355580.bib&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Cite&lt;/a&gt;
+&lt;a class=&#34;btn btn-outline-primary btn-page-header&#34; href=&#34;https://www.irtf.org/anrp/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;IRTF Applied Networking Research Prize Recepient&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;[ToN &amp;lsquo;23] Ruixuan Li, Xiaofeng Jia, Zhenyong Zhang, Jun Shao, Rongxing Lu, Jingqiang Lin, Xiaoqi Jia, Guiyi Wei. A Longitudinal and Comprehensive Measurement of DNS Strict Privacy. In IEEE/ACM Transactions on Networking
+&lt;a class=&#34;btn btn-outline-primary btn-page-header&#34; href=&#34;https://example.com/files/A_Longitudinal_and_Comprehensive_Measurement_of_DNS_Strict_Privacy.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Paper&lt;/a&gt;
+&lt;a class=&#34;btn btn-outline-primary btn-page-header&#34; href=&#34;https://example.com/files/IEEE Xplore Citation BibTeX Download 2023.11.11.4.34.55.bib&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Cite&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h1 id=&#34;statistics-and-summary&#34;&gt;Statistics and summary:&lt;/h1&gt;
+&lt;h2 id=&#34;a-count-of-ips-and-adns-of-encrypted-dns-servers&#34;&gt;A) Count of IPs and ADNs of encrypted DNS servers:&lt;/h2&gt;
+&lt;div id=&#34;graph_a&#34; style=&#34;height: 650%&#34;&gt;&lt;/div&gt;
+&lt;h2 id=&#34;b-validity-of-certificates&#34;&gt;B) Validity of certificates&lt;/h2&gt;
+&lt;div id=&#34;graph_b&#34; style=&#34;height: 350%&#34;&gt;&lt;/div&gt;
+&lt;!-- graphs --&gt;
+  &lt;script type=&#34;text/javascript&#34; src=&#34;https://fastly.jsdelivr.net/npm/echarts@5.4.3/dist/echarts.min.js&#34;&gt;&lt;/script&gt;
+  &lt;!-- Uncomment this line if you want to dataTool extension
+  &lt;script type=&#34;text/javascript&#34; src=&#34;https://fastly.jsdelivr.net/npm/echarts@5.4.3/dist/extension/dataTool.min.js&#34;&gt;&lt;/script&gt;
+  --&gt;
+  &lt;!-- Uncomment this line if you want to use gl extension
+  &lt;script type=&#34;text/javascript&#34; src=&#34;https://fastly.jsdelivr.net/npm/echarts-gl@2/dist/echarts-gl.min.js&#34;&gt;&lt;/script&gt;
+  --&gt;
+  &lt;!-- Uncomment this line if you want to echarts-stat extension
+  &lt;script type=&#34;text/javascript&#34; src=&#34;https://fastly.jsdelivr.net/npm/echarts-stat@latest/dist/ecStat.min.js&#34;&gt;&lt;/script&gt;
+  --&gt;
+  &lt;!-- Uncomment this line if you want to use map
+  &lt;script type=&#34;text/javascript&#34; src=&#34;https://fastly.jsdelivr.net/npm/echarts@4.9.0/map/js/china.js&#34;&gt;&lt;/script&gt;
+  &lt;script type=&#34;text/javascript&#34; src=&#34;https://fastly.jsdelivr.net/npm/echarts@4.9.0/map/js/world.js&#34;&gt;&lt;/script&gt;
+  --&gt;
+  &lt;!-- Uncomment these two lines if you want to use bmap extension
+  &lt;script type=&#34;text/javascript&#34; src=&#34;https://api.map.baidu.com/api?v=3.0&amp;ak=YOUR_API_KEY&#34;&gt;&lt;/script&gt;
+  &lt;script type=&#34;text/javascript&#34; src=&#34;https://fastly.jsdelivr.net/npm/echarts@5.4.3/dist/extension/bmap.min.js&#34;&gt;&lt;/script&gt;
+  --&gt;
+  &lt;script type=&#34;text/javascript&#34;&gt;
+    var dom = document.getElementById(&#39;graph_a&#39;);
+    var myChart = echarts.init(dom, null, {
+      renderer: &#39;canvas&#39;,
+      useDirtyRect: false
+    });
+    var app = {};
+    
+    var option;
+
+    const colors = [
+  &#39;#2b821d&#39;,
+  &#39;#e6b600&#39;
+];
+const dot = [
+  [&#39;2021-12&#39;, 7833, 2247],
+  [&#39;2022-01&#39;, 10440, 2484],
+  [&#39;2022-02&#39;, 10554, 2493],
+  [&#39;2022-03&#39;, 10843, 2472],
+  [&#39;2022-04&#39;, 9928, 2508],
+  [&#39;2022-05&#39;, 9401, 2535],
+  [&#39;2022-06&#39;, 9325, 2578],
+  [&#39;2022-07&#39;, 9623, 2907],
+  [&#39;2022-08&#39;, 9260, 2750],
+  [&#39;2022-09&#39;, 8914, 2544],
+  [&#39;2022-10&#39;, 9200, 2579],
+  [&#39;2022-11&#39;, 10706, 2885],
+  [&#39;2022-12&#39;, 10102, 2759],
+  [&#39;2023-01&#39;, 9773, 2658],
+  [&#39;2023-02&#39;, 9494, 2559],
+  [&#39;2023-03&#39;, 9224, 2457],
+  [&#39;2023-04&#39;, 9005, 2415],
+  [&#39;2023-10&#39;, 16315, 1384]
+];
+const dot_x = dot.map(function (item) {
+  return item[0];
+});
+const dot_ipcount = dot.map(function (item) {
+  return item[1];
+});
+const dot_adncount = dot.map(function (item) {
+  return item[2];
+});
+//////////
+const doh = [
+  [&#39;2021-12&#39;, 4735, 1005],
+  [&#39;2022-01&#39;, 6009, 2884],
+  [&#39;2022-02&#39;, 6441, 3130],
+  [&#39;2022-03&#39;, 4495, 1245],
+  [&#39;2022-04&#39;, 5268, 1279],
+  [&#39;2022-05&#39;, 4819, 1322],
+  [&#39;2022-06&#39;, 4204, 1355],
+  [&#39;2022-07&#39;, 4235, 1566],
+  [&#39;2022-08&#39;, 4154, 1496],
+  [&#39;2022-09&#39;, 4414, 1519],
+  [&#39;2022-10&#39;, 4468, 1551],
+  [&#39;2022-11&#39;, 4685, 1502],
+  [&#39;2022-12&#39;, 4587, 1413],
+  [&#39;2023-01&#39;, 4531, 1366],
+  [&#39;2023-02&#39;, 4481, 1316],
+  [&#39;2023-03&#39;, 4428, 1279],
+  [&#39;2023-04&#39;, 4380, 1252],
+  [&#39;2023-10&#39;, 5205, 571]
+];
+const doh_x = doh.map(function (item) {
+  return item[0];
+});
+const doh_ipcount = doh.map(function (item) {
+  return item[1];
+});
+const doh_adncount = doh.map(function (item) {
+  return item[2];
+});
+//////
+const doq = [
+  [&#39;2022-07&#39;, 1569, 30],
+  [&#39;2022-08&#39;, 1722, 51],
+  [&#39;2022-09&#39;, 1705, 66],
+  [&#39;2022-10&#39;, 1868, 98],
+  [&#39;2022-11&#39;, 1910, 101],
+  [&#39;2022-12&#39;, 2830, 253],
+  [&#39;2023-03&#39;, 3451, 389],
+  [&#39;2023-04&#39;, 2294, 395],
+  [&#39;2023-05&#39;, 2334, 480],
+  [&#39;2023-10&#39;, 3239, 227]
+];
+const doq_x = doq.map(function (item) {
+  return item[0];
+});
+const doq_ipcount = doq.map(function (item) {
+  return item[1];
+});
+const doq_adncount = doq.map(function (item) {
+  return item[2];
+});
+
+const doh3 = [
+  [&#39;2022-07&#39;, 69, 2],
+  [&#39;2022-08&#39;, 188, 2],
+  [&#39;2022-09&#39;, 140, 2],
+  [&#39;2022-10&#39;, 180, 2],
+  [&#39;2022-11&#39;, 79, 5],
+  [&#39;2022-12&#39;, 74, 4],
+  [&#39;2023-03&#39;, 168, 4],
+  [&#39;2023-04&#39;, 99, 3],
+  [&#39;2023-05&#39;, 95, 3],
+  [&#39;2023-10&#39;, 2175, 36]
+];
+const doh3_x = doh3.map(function (item) {
+  return item[0];
+});
+const doh3_ipcount = doh3.map(function (item) {
+  return item[1];
+});
+const doh3_adncount = doh3.map(function (item) {
+  return item[2];
+});
+
+var graph_width = &#39;39%&#39;;
+var graph_hight = &#39;40%&#39;;
+
+option = {
+  color: colors,
+  tooltip: {
+    trigger: &#39;axis&#39;,
+    // axisPointer: {
+    //   type: &#39;cross&#39;
+    // }
+  },
+  toolbox: {
+    feature: {
+      saveAsImage: { show: true }
+    }
+  },
+  grid: [
+    //0 dot
+    { height: graph_hight, width: graph_width, left: &#39;5%&#39; },
+    //1 doh
+    {
+      height: graph_hight,
+      width: graph_width,
+      left: &#39;5%&#39;,
+      bottom: &#39;3%&#39;
+    },
+    //2 doq
+    { height: graph_hight, width: graph_width, left: &#39;55%&#39; },
+    //3 doh3
+    { height: graph_hight, width: graph_width, left: &#39;55%&#39;, bottom: &#39;3%&#39;}
+  ],
+  title: [
+    { text: &#39;DOT&#39;, left: &#39;23%&#39; },
+    { text: &#39;DOH&#39;, left: &#39;23%&#39;, bottom: &#39;40%&#39; },
+    { text: &#39;DOQ&#39;, left: &#39;73%&#39; },
+    { text: &#39;DOH3&#39;, left: &#39;73%&#39;, bottom: &#39;40%&#39; }
+  ],
+  xAxis: [
+    {
+      show: true, //隐藏了x轴
+      type: &#39;category&#39;,
+      gridIndex: 0, //对应前面grid的索引位置（第一个）
+      axisTick: {
+        alignWithLabel: true
+      },
+      axisLabel: {
+        // interval:showNum,  //x轴显示的数量，我这里是动态算的
+      },
+      data: dot_x
+    },
+    ////////////
+    {
+      type: &#39;category&#39;,
+      gridIndex: 1, //对应前面grid的索引位置（第二个）
+      axisTick: {
+        alignWithLabel: true
+      },
+      axisLabel: {
+        //interval:showNum,
+      },
+      data: doh_x
+    },
+    ////////////
+    {
+      type: &#39;category&#39;,
+      gridIndex: 2,
+      axisTick: {
+        alignWithLabel: true
+      },
+      axisLabel: {
+        //interval:showNum,
+      },
+      data: doq_x
+    },
+    ////////////
+    {
+      type: &#39;category&#39;,
+      gridIndex: 3,
+      axisTick: {
+        alignWithLabel: true
+      },
+      axisLabel: {
+        //interval:showNum,
+      },
+      data: doh3_x
+    },
+  ],
+  yAxis: [
+    {
+      type: &#39;value&#39;,
+      gridIndex: 0,
+      name: &#39;IP Count&#39;,
+      splitLine: { show: true },
+      nameLocation: &#39;middle&#39;,
+      nameTextStyle: {
+        padding: 30
+      },
+      position: &#39;left&#39;,
+      axisLine: {
+        lineStyle: {
+          color: colors[0]
+        }
+      },
+      axisLabel: {
+        formatter: &#39;{value}&#39;
+      }
+    },
+    {
+      type: &#39;value&#39;,
+      gridIndex: 0,
+      nameLocation: &#39;middle&#39;,
+      name: &#39;ADN Count&#39;,
+      nameTextStyle: {
+        padding: 30
+      },
+      splitLine: { show: false },
+      position: &#39;right&#39;,
+      axisLine: {
+        lineStyle: {
+          color: colors[1]
+        }
+      },
+      axisLabel: {
+        formatter: &#39;{value}&#39;
+      }
+    },
+    /////////////////
+    {
+      type: &#39;value&#39;,
+      gridIndex: 1,
+      name: &#39;IP Count&#39;,
+      nameTextStyle: {
+        padding: 30
+      },
+      position: &#39;left&#39;,
+      nameLocation: &#39;middle&#39;,
+      splitLine: { show: false },
+      axisLine: {
+        lineStyle: {
+          color: colors[0]
+        }
+      },
+      axisLabel: {
+        formatter: &#39;{value}&#39;,
+        textStyle: {
+          fontSize: 12 //y轴坐标轴上的字体大小
+        }
+      }
+    },
+    {
+      type: &#39;value&#39;,
+      gridIndex: 1,
+      name: &#39;ADN Count&#39;,
+      nameTextStyle: {
+        padding: 30
+      },
+      nameLocation: &#39;middle&#39;,
+      position: &#39;right&#39;,
+      splitLine: { show: false },
+      axisLine: {
+        lineStyle: {
+          color: colors[1]
+        }
+      },
+      axisLabel: {
+        formatter: &#39;{value}&#39;,
+        textStyle: {
+          fontSize: 12 //y轴坐标轴上的字体大小
+        }
+      }
+    },
+    //////////////////
+    {
+      type: &#39;value&#39;,
+      gridIndex: 2,
+      name: &#39;IP Count&#39;,
+      nameTextStyle: {
+        padding: 30
+      },
+      position: &#39;left&#39;,
+      nameLocation: &#39;middle&#39;,
+      splitLine: { show: false },
+      axisLine: {
+        lineStyle: {
+          color: colors[0]
+        }
+      },
+      axisLabel: {
+        formatter: &#39;{value}&#39;,
+        textStyle: {
+          fontSize: 12 //y轴坐标轴上的字体大小
+        }
+      }
+    },
+    {
+      type: &#39;value&#39;,
+      gridIndex: 2,
+      name: &#39;ADN Count&#39;,
+      nameTextStyle: {
+        padding: 30
+      },
+      nameLocation: &#39;middle&#39;,
+      position: &#39;right&#39;,
+      splitLine: { show: false },
+      axisLine: {
+        lineStyle: {
+          color: colors[1]
+        }
+      },
+      axisLabel: {
+        formatter: &#39;{value}&#39;,
+        textStyle: {
+          fontSize: 12 //y轴坐标轴上的字体大小
+        }
+      }
+    },
+    //////////////
+    {
+      type: &#39;value&#39;,
+      gridIndex: 3,
+      name: &#39;IP Count&#39;,
+      nameTextStyle: {
+        padding: 30
+      },
+      position: &#39;left&#39;,
+      nameLocation: &#39;middle&#39;,
+      splitLine: { show: false },
+      axisLine: {
+        lineStyle: {
+          color: colors[0]
+        }
+      },
+      axisLabel: {
+        formatter: &#39;{value}&#39;,
+        textStyle: {
+          fontSize: 12 //y轴坐标轴上的字体大小
+        }
+      }
+    },
+    {
+      type: &#39;value&#39;,
+      gridIndex: 3,
+      name: &#39;ADN Count&#39;,
+      nameTextStyle: {
+        padding: 30
+      },
+      nameLocation: &#39;middle&#39;,
+      position: &#39;right&#39;,
+      splitLine: { show: false },
+      axisLine: {
+        lineStyle: {
+          color: colors[1]
+        }
+      },
+      axisLabel: {
+        formatter: &#39;{value}&#39;,
+        textStyle: {
+          fontSize: 12 //y轴坐标轴上的字体大小
+        }
+      }
+    }
+  ],
+
+  series: [
+    {
+      name: &#39;DOT IP Count&#39;,
+      type: &#39;bar&#39;,
+      xAxisIndex: 0,
+      yAxisIndex: 0,
+      data: dot_ipcount,
+      color: colors[0]
+    },
+    {
+      name: &#39;DOT ADN Count&#39;,
+      type: &#39;line&#39;,
+      xAxisIndex: 0,
+      yAxisIndex: 1,
+      data: dot_adncount,
+      color: colors[1]
+    },
+    ////////////////
+    {
+      name: &#39;DOH IP Count&#39;,
+      type: &#39;bar&#39;,
+      xAxisIndex: 1,
+      yAxisIndex: 2,
+      data: doh_ipcount,
+      color: colors[0]
+    },
+    {
+      name: &#39;DOH ADN Count&#39;,
+      type: &#39;line&#39;,
+      xAxisIndex: 1,
+      yAxisIndex: 3,
+      data: doh_adncount,
+      color: colors[1]
+    },
+    ////////////////
+    {
+      name: &#39;DOQ IP Count&#39;,
+      type: &#39;bar&#39;,
+      xAxisIndex: 2,
+      yAxisIndex: 4,
+      data: doq_ipcount,
+      color: colors[0]
+    },
+    {
+      name: &#39;DOQ ADN Count&#39;,
+      type: &#39;line&#39;,
+      xAxisIndex: 2,
+      yAxisIndex: 5,
+      data: doq_adncount,
+      color: colors[1]
+    },
+    ////////////////
+    {
+      name: &#39;DOH3 IP Count&#39;,
+      type: &#39;bar&#39;,
+      xAxisIndex: 3,
+      yAxisIndex: 6,
+      data: doh3_ipcount,
+      color: colors[0]
+    },
+    {
+      name: &#39;DOH3 ADN Count&#39;,
+      type: &#39;line&#39;,
+      xAxisIndex: 3,
+      yAxisIndex: 7,
+      data: doh3_adncount,
+      color: colors[1]
+    },
+  ]
+};
+
+
+    if (option &amp;&amp; typeof option === &#39;object&#39;) {
+      myChart.setOption(option);
+    }
+
+    window.addEventListener(&#39;resize&#39;, myChart.resize);
+  &lt;/script&gt;
+&lt;!-- graph b --&gt;
+&lt;script type=&#34;text/javascript&#34;&gt;
+    var dom = document.getElementById(&#39;graph_b&#39;);
+    var myChart = echarts.init(dom, null, {
+      renderer: &#39;canvas&#39;,
+      useDirtyRect: false
+    });
+    var app = {};
+    
+    var option;
+
+    const valid = [
+  [&#39;2021-12&#39;, 0.7760755776841568, 0.9324181626187962, 0, 0],
+  [&#39;2022-01&#39;, 0.6272988505747127, 0.7109335996005991, 0, 0],
+  [&#39;2022-02&#39;, 0.6227022929694902, 0.7404129793510325, 0, 0],
+  [&#39;2022-03&#39;, 0.6085031817762612, 0.9276974416017798, 0, 0],
+  [&#39;2022-04&#39;, 0.6645850120870266, 0.936408504176158, 0, 0],
+  [&#39;2022-05&#39;, 0.6997127965110095, 0.9223905374559037, 0, 0],
+  [&#39;2022-06&#39;, 0.6913672922252011, 0.9112749762131304, 0, 0],
+  [&#39;2022-07&#39;, 0.6895978385118986, 0.9010625737898466, 0.9974506054811982, 1.0],
+  [&#39;2022-08&#39;, 0.7014038876889849, 0.8991333654309099, 0.9936120789779327, 1.0],
+  [&#39;2022-09&#39;, 0.7293022212250393, 0.8994109651110104, 0.9847507331378299, 1.0],
+  [&#39;2022-10&#39;, 0.7204347826086956, 0.9015219337511191, 0.9753747323340471, 1.0],
+  [&#39;2022-11&#39;, 0.6301139547917056, 0.9054429028815368, 0.9664921465968587, 1.0],
+  [&#39;2022-12&#39;, 0.649574341714512, 0.8968824940047961, 0.9614840989399294, 1.0],
+  [&#39;2023-01&#39;, 0.6582420955694259, 0.8874420657691459, 0, 0],
+  [&#39;2023-02&#39;, 0.6687381504107858, 0.8917652309752288, 0, 0],
+  [&#39;2023-03&#39;, 0.6835429314830876, 0.8873080397470642, 0.944943494639235, 1.0],
+  [&#39;2023-04&#39;, 0.6957245974458635, 0.8872146118721461, 0.9350479511769835, 1.0],
+  [
+    &#39;2023-10&#39;,
+    0.6250076616610482,
+    0.8975984630163305,
+    0.9617165791911083,
+    0.9972413793103448
+  ]
+];
+const valid_x = valid.map(function (item) {
+  return item[0];
+});
+const valid_dot = valid.map(function (item) {
+  return item[1];
+});
+const valid_doh = valid.map(function (item) {
+  return item[2];
+});
+const valid_doq = valid.map(function (item) {
+  return item[3];
+});
+const valid_doh3 = valid.map(function (item) {
+  return item[4];
+});
+
+const self_signed = [
+  [&#39;2021-12&#39;, 0.16992212434571685, 0.013093980992608237, 0, 0],
+  [&#39;2022-01&#39;, 0.3282567049808429, 0.0068230986853053755, 0, 0],
+  [&#39;2022-02&#39;, 0.3349440970248247, 0.007297003570874088, 0, 0],
+  [&#39;2022-03&#39;, 0.34971871253343173, 0.012458286985539488, 0, 0],
+  [&#39;2022-04&#39;, 0.28807413376309426, 0.012148823082763858, 0, 0],
+  [&#39;2022-05&#39;, 0.2514626103605999, 0.015148371031334302, 0, 0],
+  [&#39;2022-06&#39;, 0.2551206434316354, 0.017602283539486202, 0, 0],
+  [
+    &#39;2022-07&#39;,
+    0.25033773251584746,
+    0.018417945690672965,
+    0.0025493945188017845,
+    0.0
+  ],
+  [
+    &#39;2022-08&#39;,
+    0.23855291576673865,
+    0.01853635050553683,
+    0.005807200929152149,
+    0.0
+  ],
+  [&#39;2022-09&#39;, 0.212474758806372, 0.02084277299501586, 0.00997067448680352, 0.0],
+  [
+    &#39;2022-10&#39;,
+    0.22554347826086957,
+    0.020590868397493287,
+    0.011777301927194861,
+    0.0
+  ],
+  [
+    &#39;2022-11&#39;,
+    0.3182327666728937,
+    0.017502668089647812,
+    0.015183246073298429,
+    0.0
+  ],
+  [
+    &#39;2022-12&#39;,
+    0.2939021975846367,
+    0.01591454109439721,
+    0.01696113074204947,
+    0.0
+  ],
+  [&#39;2023-01&#39;, 0.2814898188887752, 0.017214742882365925, 0, 0],
+  [&#39;2023-02&#39;, 0.2676427217189804, 0.012720374916313323, 0, 0],
+  [
+    &#39;2023-03&#39;,
+    0.25314397224631396,
+    0.012195121951219513,
+    0.01883512025499855,
+    0.0
+  ],
+  [
+    &#39;2023-04&#39;,
+    0.23986674069961134,
+    0.012100456621004566,
+    0.023103748910200523,
+    0.0
+  ],
+  [
+    &#39;2023-10&#39;,
+    0.31467974256818876,
+    0.02862632084534102,
+    0.009262117937635072,
+    0.001379310344827586
+  ]
+];
+const self_signed_x = self_signed.map(function (item) {
+  return item[0];
+});
+const self_signed_dot = self_signed.map(function (item) {
+  return item[1];
+});
+const self_signed_doh = self_signed.map(function (item) {
+  return item[2];
+});
+const self_signed_doq = self_signed.map(function (item) {
+  return item[3];
+});
+const self_signed_doh3 = self_signed.map(function (item) {
+  return item[4];
+});
+
+option = {
+  title: [
+    {
+      text: &#39;Valid&#39;,
+      left: &#39;25%&#39;
+    },
+    {
+      text: &#39;Self-signed&#39;,
+      left: &#39;73%&#39;
+    }
+  ],
+  tooltip: {
+    trigger: &#39;axis&#39;
+  },
+  legend: [
+    {
+      data: [&#39;DOT&#39;, &#39;DOH&#39;, &#39;DOQ&#39;, &#39;DOH3&#39;],
+      left: &#39;41%&#39;,
+      top: &#39;2.5%&#39;
+    }
+  ],
+  grid: [
+    {
+      left: &#39;3%&#39;,
+      bottom: &#39;3%&#39;,
+      width: &#39;45%&#39;,
+      containLabel: true
+    },
+    {
+      left: &#39;50%&#39;,
+      bottom: &#39;3%&#39;,
+      width: &#39;45%&#39;,
+      containLabel: true
+    }
+  ],
+  toolbox: {
+    feature: {
+      saveAsImage: { show: true }
+    }
+  },
+  xAxis: [
+    {
+      gridIndex: 0,
+      type: &#39;category&#39;,
+      boundaryGap: false,
+      data: valid_x
+    },
+    {
+      gridIndex: 1,
+      type: &#39;category&#39;,
+      boundaryGap: false,
+      data: self_signed_x,
+    }
+  ],
+  yAxis: [
+    {
+      gridIndex: 0,
+      type: &#39;value&#39;
+    },
+    {
+      gridIndex: 1,
+      type: &#39;value&#39;
+    }
+  ],
+  series: [
+    {
+      name: &#39;DOT&#39;,
+      type: &#39;line&#39;,
+      stack: &#39;Total&#39;,
+      xAxisIndex: 0,
+      yAxisIndex: 0,
+      data: valid_dot
+    },
+    {
+      name: &#39;DOH&#39;,
+      type: &#39;line&#39;,
+      // stack: &#39;Total&#39;,
+      xAxisIndex: 0,
+      yAxisIndex: 0,
+      data: valid_doh
+    },
+    {
+      name: &#39;DOQ&#39;,
+      type: &#39;line&#39;,
+      // stack: &#39;Total&#39;,
+      xAxisIndex: 0,
+      yAxisIndex: 0,
+      data: valid_doq
+    },
+    {
+      name: &#39;DOH3&#39;,
+      type: &#39;line&#39;,
+      // stack: &#39;Total&#39;,
+      xAxisIndex: 0,
+      yAxisIndex: 0,
+      data: valid_doh3
+    },
+    ////////////////////
+    {
+      name: &#39;DOT&#39;,
+      type: &#39;line&#39;,
+      // stack: &#39;Total&#39;,
+      xAxisIndex: 1,
+      yAxisIndex: 1,
+      data: self_signed_dot
+    },
+    {
+      name: &#39;DOH&#39;,
+      type: &#39;line&#39;,
+      // stack: &#39;Total&#39;,
+      xAxisIndex: 1,
+      yAxisIndex: 1,
+      data: self_signed_doh
+    },
+    {
+      name: &#39;DOQ&#39;,
+      type: &#39;line&#39;,
+      // stack: &#39;Total&#39;,
+      xAxisIndex: 1,
+      yAxisIndex: 1,
+      data: self_signed_doq
+    },
+    {
+      name: &#39;DOH3&#39;,
+      type: &#39;line&#39;,
+      // stack: &#39;Total&#39;,
+      xAxisIndex: 1,
+      yAxisIndex: 1,
+      data: self_signed_doh3
+    },
+  ]
+};
+
+
+    if (option &amp;&amp; typeof option === &#39;object&#39;) {
+      myChart.setOption(option);
+    }
+
+    window.addEventListener(&#39;resize&#39;, myChart.resize);
+  &lt;/script&gt;
+&lt;h1 id=&#34;raw-data&#34;&gt;Raw data:&lt;/h1&gt;
+&lt;p&gt;Here we provide open access to raw data that lags one month behind. Drop us an &lt;a href=&#34;luchaoyi@tsinghua.edu.cn&#34;&gt;email&lt;/a&gt; if you need the most recent scanning results.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Date&lt;/th&gt;
+&lt;th&gt;DoT servers&lt;/th&gt;
+&lt;th&gt;DoH servers&lt;/th&gt;
+&lt;th&gt;DoQ servers&lt;/th&gt;
+&lt;th&gt;DoH3 servers&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Oct, 2023&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://example.com/files/dot-2023-10.json&#34;&gt;dot-202310.json&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://example.com/files/doh-2023-10.json&#34;&gt;doh-202310.json&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://example.com/files/doq-2023-10.json&#34;&gt;doq-202310.json&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://example.com/files/doh3-2023-10.json&#34;&gt;doh3-202310.json&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Apr, 2023&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://example.com/files/dot-2023-04.json&#34;&gt;dot-202304.json&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://example.com/files/doh-2023-04.json&#34;&gt;doh-202304.json&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://example.com/files/doq-2023-04.json&#34;&gt;doq-202304.json&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://example.com/files/doh3-2023-04.json&#34;&gt;doh3-202304.json&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
