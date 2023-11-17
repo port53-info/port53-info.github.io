@@ -32,24 +32,6 @@ Our scan is performed monthly and dates back to December 2021.
 
 <!-- graphs -->
   <script type="text/javascript" src="https://fastly.jsdelivr.net/npm/echarts@5.4.3/dist/echarts.min.js"></script>
-  <!-- Uncomment this line if you want to dataTool extension
-  <script type="text/javascript" src="https://fastly.jsdelivr.net/npm/echarts@5.4.3/dist/extension/dataTool.min.js"></script>
-  -->
-  <!-- Uncomment this line if you want to use gl extension
-  <script type="text/javascript" src="https://fastly.jsdelivr.net/npm/echarts-gl@2/dist/echarts-gl.min.js"></script>
-  -->
-  <!-- Uncomment this line if you want to echarts-stat extension
-  <script type="text/javascript" src="https://fastly.jsdelivr.net/npm/echarts-stat@latest/dist/ecStat.min.js"></script>
-  -->
-  <!-- Uncomment this line if you want to use map
-  <script type="text/javascript" src="https://fastly.jsdelivr.net/npm/echarts@4.9.0/map/js/china.js"></script>
-  <script type="text/javascript" src="https://fastly.jsdelivr.net/npm/echarts@4.9.0/map/js/world.js"></script>
-  -->
-  <!-- Uncomment these two lines if you want to use bmap extension
-  <script type="text/javascript" src="https://api.map.baidu.com/api?v=3.0&ak=YOUR_API_KEY"></script>
-  <script type="text/javascript" src="https://fastly.jsdelivr.net/npm/echarts@5.4.3/dist/extension/bmap.min.js"></script>
-  -->
-
   <script type="text/javascript">
     var dom = document.getElementById('graph_a');
     var myChart = echarts.init(dom, null, {
@@ -57,9 +39,7 @@ Our scan is performed monthly and dates back to December 2021.
       useDirtyRect: false
     });
     var app = {};
-    
     var option;
-
     const colors = [
   '#2b821d',
   '#e6b600'
@@ -175,9 +155,6 @@ option = {
   color: colors,
   tooltip: {
     trigger: 'axis',
-    // axisPointer: {
-    //   type: 'cross'
-    // }
   },
   toolbox: {
     feature: {
@@ -438,7 +415,8 @@ option = {
       xAxisIndex: 0,
       yAxisIndex: 0,
       data: dot_ipcount,
-      color: colors[0]
+      color: colors[0],
+      barMaxWidth: 20
     },
     {
       name: 'DOT ADN Count',
@@ -455,7 +433,8 @@ option = {
       xAxisIndex: 1,
       yAxisIndex: 2,
       data: doh_ipcount,
-      color: colors[0]
+      color: colors[0],
+      barMaxWidth: 20
     },
     {
       name: 'DOH ADN Count',
@@ -472,7 +451,8 @@ option = {
       xAxisIndex: 2,
       yAxisIndex: 4,
       data: doq_ipcount,
-      color: colors[0]
+      color: colors[0],
+      barMaxWidth: 20
     },
     {
       name: 'DOQ ADN Count',
@@ -489,7 +469,8 @@ option = {
       xAxisIndex: 3,
       yAxisIndex: 6,
       data: doh3_ipcount,
-      color: colors[0]
+      color: colors[0],
+      barMaxWidth: 20
     },
     {
       name: 'DOH3 ADN Count',
@@ -501,8 +482,6 @@ option = {
     },
   ]
 };
-
-
     if (option && typeof option === 'object') {
       myChart.setOption(option);
     }
