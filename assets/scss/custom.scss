@@ -1,17 +1,83 @@
+// 设置容器的最大宽度为80%
+.container {
+    max-width: 80%;
+}
 
-.container{ max-width:80%;}
-// .page-body{ color: darkgray; }
-.article{ max-width:90%; margin: 0 auto;}
-.article-container{ max-width:100%; }
-.article-container.pt-3{ max-width:100%; }
-.navbar{ font-size: 1.0em; }
-body{ color: rgb(71, 70, 70); }
-h1{ color: rgb(71, 70, 70); font-size: 1.5rem; font-weight: bold;}
-h2{ color: rgb(71, 70, 70); font-size: 1.2rem;}
-h3{ color: rgb(71, 70, 70); }
-h4{ color: rgb(71, 70, 70); }
-h5{ color: rgb(71, 70, 70); }
-h6{ color: rgb(71, 70, 70); }
-.section-subheading.article-title.mb-1.mt-3{ color: rgb(71, 70, 70); }
-.table td {padding: 0.2rem;}
-.table th {border-top: 0px solid #dee2e6;}
+// 设置文章的最大宽度为90%，居中显示
+.article {
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+// 设置文章容器的最大宽度为100%
+.article-container {
+    max-width: 100%;
+}
+
+// 设置带有类名".pt-3"的文章容器的最大宽度为100%
+.article-container.pt-3 {
+    max-width: 100%;
+}
+
+// 设置导航栏的字体大小为1.0em
+.navbar {
+    font-size: 1.0em;
+}
+
+// 设置页面文本的颜色为rgb(71, 70, 70)
+body {
+    color: rgb(71, 70, 70);
+}
+
+// 设置标题1的颜色、字体大小和字体加粗
+h1 {
+    color: rgb(71, 70, 70);
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+// 设置标题2的颜色和字体大小
+h2 {
+    color: rgb(71, 70, 70);
+    font-size: 1.2rem;
+}
+
+// 设置标题3的颜色
+h3 {
+    color: rgb(71, 70, 70);
+}
+
+// 设置标题4的颜色
+h4 {
+    color: rgb(71, 70, 70);
+}
+
+// 设置标题5的颜色
+h5 {
+    color: rgb(71, 70, 70);
+}
+
+// 设置标题6的颜色
+h6 {
+    color: rgb(71, 70, 70);
+}
+
+// 设置文章标题类".section-subheading.article-title.mb-1.mt-3"的颜色
+.section-subheading.article-title.mb-1.mt-3 {
+    color: rgb(71, 70, 70);
+}
+
+// 设置表格单元格的内边距
+.table td {
+    padding: 0.2rem;
+}
+
+// 设置表格表头的顶部边框样式
+.table th {
+    border-top: 0px solid #dee2e6;
+}
+
+// 设置分享列表的显示方式为隐藏
+ul.share {
+    display: none;
+}

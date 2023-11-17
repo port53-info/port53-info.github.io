@@ -10,7 +10,7 @@ def csv_to_html(input_file, output_file):
     html = "\t"+"<tr>"+"\n"
     row = data[0]
     for i in range(len(row)):
-        html += "\t"+"\t"+f"<td>{row[i]}</td>"+"\n"
+        html += "\t"+"\t"+f"<td><strong>{row[i]}</strong></td>"+"\n"
     html += "\t"+"</tr>"+"\n" 
     for row in data[1:]:
         html += "\t"+"<tr>"+"\n"

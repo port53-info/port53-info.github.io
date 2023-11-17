@@ -9721,3 +9721,6 @@ h6 {
 
 .table th {
   border-top: 0px solid #dee2e6; }
+
+ul.share {
+  display: none; }

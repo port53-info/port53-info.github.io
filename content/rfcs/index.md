@@ -4,7 +4,8 @@ date: 2023-11-01
 ---
 
 DNS turns **40** this year!
-We maintain an up-to-date repository of DNS-related RFCs. To help community members quickly gather documents of interest, we also give finer-grained labels under particular topics (e.g., DNSSEC, IDNA, DNS privacy) to each RFC.
+We maintain an up-to-date repository of DNS-related RFCs. To help community members quickly gather documents of
+interest, we also give finer-grained labels under particular topics (e.g., DNSSEC, IDNA, DNS privacy) to each RFC.
 
 What's within the list:
 
@@ -15,38 +16,41 @@ What's within the list:
 - DNS use: Internet functionalities that explicitly rely on the DNS (e.g., SPF, DANE)
 - Obsoleted/deprecated versions of the above
 
-The list updates once a month. It now includes **<span id="rfcsnumber">42</span>** RFCs under **<span id="labelsnumber">42</span>** labels.
+The list updates once a month. It now includes **<span id="rfcsnumber">42</span>** RFCs under **<span
+	id="labelsnumber">42</span>** labels.
 
-Comments or suggestions are extremely welcome! Drop us an [email](luchaoyi@tsinghua.edu.cn) if you think an RFC is missing, mis-labeled, should be removed, or if you have any other feedback.
+Comments or suggestions are extremely welcome! Drop us an [email](luchaoyi@tsinghua.edu.cn) if you think an RFC is
+missing, mis-labeled, should be removed, or if you have any other feedback.
 
 <body>
-    <!-- <table id="checkbutton" style="border-top: 0px;"></table> -->
-    <table id="checkboxes" style="border-collapse: collapse;">
-        <tr>
-            <th colspan="8" style="vertical-align: middle; text-align: center;">RFC status 
-			<button class="btn btn-outline-primary btn-page-header" id="rfc_status_s">Select All </button>
-			<button class="btn btn-outline-primary btn-page-header" id="rfc_status_uns">Clear All</button>
+	<!-- <table id="checkbutton" style="border-top: 0px;"></table> -->
+	<table id="checkboxes" style="border-collapse: collapse;">
+		<tr>
+			<th colspan="8" style="vertical-align: middle; text-align: center;">RFC status
+				<button class="btn btn-outline-primary btn-page-header" id="rfc_status_s">Select All </button>
+				<button class="btn btn-outline-primary btn-page-header" id="rfc_status_uns">Clear All</button>
 			</th>
-        </tr>
-    </table>
-    <table id="checkboxes_topics" style="border-collapse: collapse;">
-        <tr style="line-height: 2;">
-            <th colspan="6" style="vertical-align: middle; text-align: center;">Topics <button
-                class="btn btn-outline-primary btn-page-header" id="topic_s">Select All</button><button
-                class="btn btn-outline-primary btn-page-header" id="topic_uns">Clear All</button>
-            </th>
-        </tr>
-        </tr>
-    </table>
-    <br>
-    <table id=myTable>	<tr>
-		<td>RFC status</td>
-		<td>Topic 1</td>
-		<td>Topic 2</td>
-		<td>RFC</td>
-		<td>Title</td>
-		<td>Obsoleted by</td>
-		<td></td>
+		</tr>
+	</table>
+	<table id="checkboxes_topics" style="border-collapse: collapse;">
+		<tr style="line-height: 2;">
+			<th colspan="6" style="vertical-align: middle; text-align: center;">Topics <button
+					class="btn btn-outline-primary btn-page-header" id="topic_s">Select All</button><button
+					class="btn btn-outline-primary btn-page-header" id="topic_uns">Clear All</button>
+			</th>
+		</tr>
+		</tr>
+	</table>
+	<br>
+	<button class="btn btn-outline-primary btn-page-header"><strong><span id="rfcshowed">42</span></strong> rfcs shown</button>
+	<br>
+	<table id=myTable>	<tr>
+		<td><strong>RFC status</strong></td>
+		<td><strong>Topic 1</strong></td>
+		<td><strong>Topic 2</strong></td>
+		<td><strong>RFC</strong></td>
+		<td><strong>Title</strong></td>
+		<td><strong>Obsoleted by</strong></td>
 	</tr>
 	<tr>
 		<td>Proposed Standard</td>
@@ -3649,409 +3653,395 @@ Comments or suggestions are extremely welcome! Drop us an [email](luchaoyi@tsing
 		<td>1034, 1035</td>
 	</tr>
 </table>
-    <script>
-        //勾选的tags
-        var chacked_status = {};
-        var chacked_topic = {};
-        // 获取表格中的所有不重复的status，并生成对应的 checkbox
-        var names = [];
-        var table = document.getElementById("myTable");
-        var rows = table.getElementsByTagName("tr");
-        for (var i = 1; i < rows.length; i++) {
-            var name = rows[i].getElementsByTagName("td")[0].innerText;
-            if (names.indexOf(name) === -1) {
-                names.push(name);
-            }
-            chacked_status[name] = 1
-        }
-        names.sort();
-        var checkboxesDiv = document.getElementById("checkboxes");
-        var tr = document.createElement("tr");
-        var tdc = 0;
-        for (var i = 0; i < names.length; i++) {
-            var td = document.createElement("td");
-			// td.style.padding = "0.2rem";
-            var checkbox = document.createElement("input");
-            name = names[i];
-            checkbox.type = "checkbox";
-            checkbox.name = "names";
-            checkbox.value = name;
-            td.appendChild(checkbox);
-            td.appendChild(document.createTextNode(" " + name));
-            tr.appendChild(td);
-            tdc++;
-            if (tdc === 8) {
-                checkboxesDiv.appendChild(tr);
-                tr = document.createElement('tr')
-                tdc = 0;
-            }
-        }
-		if(tdc != 0){
-			while(tdc < 8){
-				td = document.createElement('td');
-				// td.style.padding = "0.2rem";
+	<script>
+		//勾选的tags
+		var chacked_status = {};
+		var chacked_topic = {};
+		// 获取表格中的所有不重复的status，并生成对应的 checkbox
+		var names = [];
+		var table = document.getElementById("myTable");
+		var rows = table.getElementsByTagName("tr");
+		for (var i = 1; i < rows.length; i++) {
+			var name = rows[i].getElementsByTagName("td")[0].innerText;
+			if (names.indexOf(name) === -1) {
+				names.push(name);
+			}
+			chacked_status[name] = 1
+		}
+		names.sort();
+		var checkboxesDiv = document.getElementById("checkboxes");
+		var tr = document.createElement("tr");
+		tr.style.borderTop = '1px solid #dee2e6';
+		var tdc = 0;
+		for (var i = 0; i < names.length; i++) {
+			var td = document.createElement("td");
+			td.style.borderTop = 'none';
+			td.style.borderBottom = 'none';
+			var checkbox = document.createElement("input");
+			name = names[i];
+			checkbox.type = "checkbox";
+			checkbox.name = "names";
+			checkbox.value = name;
+			td.appendChild(checkbox);
+			td.appendChild(document.createTextNode(" " + name));
+			tr.appendChild(td);
+			tdc++;
+			if (tdc === 8) {
+				checkboxesDiv.appendChild(tr);
+				tr = document.createElement('tr')
+				tdc = 0;
+			}
+		}
+		if (tdc != 0) {
+			while (tdc < 8) {
+				td = document.createElement("td");
+				td.style.borderTop = 'none';
+				td.style.borderBottom = 'none';
 				td.textContent = "";
 				tr.appendChild(td);
 				tdc++;
 			};
-            checkboxesDiv.appendChild(tr);
-        };
+			checkboxesDiv.appendChild(tr);
+		};
 		// 获取所有点选框  
-        var checkboxes = document.getElementsByName('names');
-        // 遍历所有点选框并将它们的状态设置为已勾选  
-        for (var i = 0; i < checkboxes.length; i++) {
-            checkboxes[i].checked = true;
-        }
-        // 绑定事件，点击 checkbox 更新表格
-        var checkboxes = document.getElementsByName("names");
-        for (var i = 0; i < checkboxes.length; i++) {
-            checkboxes[i].addEventListener("change", function () {
-                if (this.checked){
-                    //console.log("add"+this.value);
-                    chacked_status[this.value] = 1;
-                }else{
-                    delete(chacked_status[this.value]);
-                    //console.log("delete"+this.value);
-                }
-                upgradetable();
-            });
-        }
-        ////////////////////////////////////////////////////////////////////////////
-        var specification = {"Clarification/Terminology":1, "Core DNS documents":1, "DNS over TCP":1, "EDNS & Extensions":1, "IDNA/Globalization":1, "Name Registration & Protocols":1, "Namespace":1, "New RRs/Codes":1,"Reverse DNS":1, "Statement of Retirement":1, "Zone Transfer/Update":1};
+		var checkboxes = document.getElementsByName('names');
+		// 遍历所有点选框并将它们的状态设置为已勾选  
+		for (var i = 0; i < checkboxes.length; i++) {
+			checkboxes[i].checked = true;
+		}
+		// 绑定事件，点击 checkbox 更新表格
+		var checkboxes = document.getElementsByName("names");
+		for (var i = 0; i < checkboxes.length; i++) {
+			checkboxes[i].addEventListener("change", function () {
+				if (this.checked) {
+					//console.log("add"+this.value);
+					chacked_status[this.value] = 1;
+				} else {
+					delete (chacked_status[this.value]);
+					//console.log("delete"+this.value);
+				}
+				upgradetable();
+			});
+		}
+		////////////////////////////////////////////////////////////////////////////
+		var specification = { "Clarification/Terminology": 1, "Core DNS documents": 1, "DNS over TCP": 1, "EDNS & Extensions": 1, "IDNA/Globalization": 1, "Name Registration & Protocols": 1, "Namespace": 1, "New RRs/Codes": 1, "Reverse DNS": 1, "Statement of Retirement": 1, "Zone Transfer/Update": 1 };
 		///
-        var operation = {"Data Collection & Representation":1, "DNS Root":1, "Flaws/Errors & Reporting":1, "Guidelines/Recommendations":1, "Servicing":1};
+		var operation = { "Data Collection & Representation": 1, "DNS Root": 1, "Flaws/Errors & Reporting": 1, "Guidelines/Recommendations": 1, "Servicing": 1 };
 		///
-        var security = {"DNS Privacy":1, "DNSSEC - Algorithms/Keys":1, "DNSSEC - General Operation":1, "DNSSEC - Others":1, "DNSSEC - Problem Statement":1, "Encrypted DNS":1, "Filtering":1,"Threats/Vulnerabilities & Patches":1, "Transaction Authentication":1};
+		var security = { "DNS Privacy": 1, "DNSSEC - Algorithms/Keys": 1, "DNSSEC - General Operation": 1, "DNSSEC - Others": 1, "DNSSEC - Problem Statement": 1, "Encrypted DNS": 1, "Filtering": 1, "Threats/Vulnerabilities & Patches": 1, "Transaction Authentication": 1 };
 		///
-        var use = {"Email Application":1, "IPv6 Application":1, "Other Applications":1, "PKI Application":1,"Service Discovery/mDNS":1, "SRV/SVCB Functionalities":1, "ENUM/DDDS":1, "Other use":1};
-        // 获取表格中的所有不重复的topics，并生成对应的 checkbox
-        var topics = [];
-        var table = document.getElementById("myTable");
-        var rows = table.getElementsByTagName("tr");
-        for (var i = 1; i < rows.length; i++) {
-            var name1 = rows[i].getElementsByTagName("td")[1].innerText;
-            var name2 = rows[i].getElementsByTagName("td")[2].innerText;
-            if (topics.indexOf(name1) === -1 && name1 != "") {
-                topics.push(name1);
-            }
-            if (topics.indexOf(name2) === -1 && name2 != "") {
-                topics.push(name2);
-            }
-            // if (name1 === "" || name2 === "") {
-            //     continue;
-            // }
-            // chacked_topic[name1] = 1;
-            // chacked_topic[name2] = 1;
-        }
-        // for (const element of topics) {
-        //     chacked_topic[element] = 1;
-        // };
-        chacked_topic["Core DNS documents"] = 1
-        topics.sort();
-        //添加topic按钮
-        var checkboxesDiv = document.getElementById("checkboxes_topics");
-        //首先添加 specification
-        var tdc = 0;
-        var tr = document.createElement("tr");
-        var td = document.createElement("td");
-		// td.style.padding = "0.2rem";
-        td.textContent = "specification";
-        td.style.fontWeight = 'bold';
-        tr.appendChild(td);
-        // console.log("total tags:" + topics.length);
-        for (var i = 0; i < topics.length; i++) {
+		var use = { "Email Application": 1, "IPv6 Application": 1, "Other Applications": 1, "PKI Application": 1, "Service Discovery/mDNS": 1, "SRV/SVCB Functionalities": 1, "ENUM/DDDS": 1, "Other use": 1 };
+		// 获取表格中的所有不重复的topics，并生成对应的 checkbox
+		var topics = [];
+		var table = document.getElementById("myTable");
+		var rows = table.getElementsByTagName("tr");
+		for (var i = 1; i < rows.length; i++) {
+			var name1 = rows[i].getElementsByTagName("td")[1].innerText;
+			var name2 = rows[i].getElementsByTagName("td")[2].innerText;
+			if (topics.indexOf(name1) === -1 && name1 != "") {
+				topics.push(name1);
+			}
+			if (topics.indexOf(name2) === -1 && name2 != "") {
+				topics.push(name2);
+			}
+		}
+		chacked_topic["Core DNS documents"] = 1
+		topics.sort();
+		//添加topic按钮
+		var checkboxesDiv = document.getElementById("checkboxes_topics");
+		//首先添加 specification
+		var tdc = 0;
+		var tr = document.createElement("tr");
+		tr.style.borderTop = '1px solid #dee2e6';
+		var td = document.createElement("td");
+		td.textContent = "Specification";
+		td.style.borderTop = 'none';
+		td.style.borderBottom = 'none';
+		td.style.fontWeight = 'bold';
+		tr.appendChild(td);
+		// console.log("total tags:" + topics.length);
+		for (var i = 0; i < topics.length; i++) {
 			name = topics[i];
-            if(!(name in specification)){
-                continue;
-            };
+			if (!(name in specification)) {
+				continue;
+			};
 			// console.log(name);
-            var td = document.createElement("td");
-			// td.style.padding = "0.2rem";
-            var checkbox = document.createElement("input");
-            checkbox.type = "checkbox";
-            checkbox.name = "tag23";
-            checkbox.value = name;
-            td.appendChild(checkbox);
-            td.appendChild(document.createTextNode(" " + name));
-            tr.appendChild(td);
-            tdc++;
-            if (tdc === 5) {
-                checkboxesDiv.appendChild(tr);
-                tr = document.createElement('tr')
-                td = document.createElement('td');
-				// td.style.padding = "0.2rem";
-                td.textContent = "";
-                tr.appendChild(td)
-                tdc = 0;
-            }
-        }
-        if(tdc != 0){
-			while(tdc < 5){
-				td = document.createElement('td');
-				// td.style.padding = "0.2rem";
+			var td = document.createElement("td");
+			td.style.borderTop = 'none';
+			td.style.borderBottom = 'none';
+			var checkbox = document.createElement("input");
+			checkbox.type = "checkbox";
+			checkbox.name = "tag23";
+			checkbox.value = name;
+			td.appendChild(checkbox);
+			td.appendChild(document.createTextNode(" " + name));
+			tr.appendChild(td);
+			tdc++;
+			if (tdc === 5) {
+				checkboxesDiv.appendChild(tr);
+				tr = document.createElement('tr')
+				td = document.createElement("td");
+				td.style.borderTop = 'none';
+				td.style.borderBottom = 'none'; td.textContent = "";
+				tr.appendChild(td)
+				tdc = 0;
+			}
+		}
+		if (tdc != 0) {
+			while (tdc < 5) {
+				td = document.createElement("td");
+				td.style.borderTop = 'none';
+				td.style.borderBottom = 'none';
 				td.textContent = "";
 				tr.appendChild(td);
 				tdc++;
 			};
-            checkboxesDiv.appendChild(tr);
-        };
-		//多来一行作为区隔
-		// var tr = document.createElement("tr");
-		// for(var i = 0; i < 6; i++){
-        // 	var td = document.createElement("td");
-		// 	// td.style.padding = "0.2rem";
-		// 	td.textContent = "";
-		// 	tr.appendChild(td);
-		// }
-		// checkboxesDiv.appendChild(tr);
-        //然后operation
-        var tdc = 0;
-        var tr = document.createElement("tr");
-        var td = document.createElement("td");
-		// td.style.padding = "0.2rem";
-        td.textContent = "operation";
-        td.style.fontWeight = 'bold';
-        tr.appendChild(td);
-        // console.log("total tags:" + topics.length);
-        for (var i = 0; i < topics.length; i++) {
-            var td = document.createElement("td");
-			// td.style.padding = "0.2rem";
-            var checkbox = document.createElement("input");
-            name = topics[i];
-            if(!(name in operation)){
-                continue;
-            };
-            checkbox.type = "checkbox";
-            checkbox.name = "tag23";
-            checkbox.value = name;
-            td.appendChild(checkbox);
-            td.appendChild(document.createTextNode(" " + name));
-            tr.appendChild(td);
-            tdc++;
-            if (tdc === 5) {
-                checkboxesDiv.appendChild(tr);
-                tr = document.createElement('tr')
-                td = document.createElement('td');
-				// td.style.padding = "0.2rem";
-                td.textContent = "";
-                tr.appendChild(td)
-                tdc = 0;
-            }
-        }
-        if(tdc != 0){
-			while(tdc < 5){
-				td = document.createElement('td');
-				// td.style.padding = "0.2rem";
+			checkboxesDiv.appendChild(tr);
+		};
+		//然后operation
+		var tdc = 0;
+		var tr = document.createElement("tr");
+		tr.style.borderTop = '1px solid #dee2e6';
+		var td = document.createElement("td");
+		td.style.borderTop = 'none';
+		td.style.borderBottom = 'none';
+		td.textContent = "Operation";
+		td.style.fontWeight = 'bold';
+		tr.appendChild(td);
+		// console.log("total tags:" + topics.length);
+		for (var i = 0; i < topics.length; i++) {
+			var td = document.createElement("td");
+			td.style.borderTop = 'none';
+			td.style.borderBottom = 'none';
+			var checkbox = document.createElement("input");
+			name = topics[i];
+			if (!(name in operation)) {
+				continue;
+			};
+			checkbox.type = "checkbox";
+			checkbox.name = "tag23";
+			checkbox.value = name;
+			td.appendChild(checkbox);
+			td.appendChild(document.createTextNode(" " + name));
+			tr.appendChild(td);
+			tdc++;
+			if (tdc === 5) {
+				checkboxesDiv.appendChild(tr);
+				tr = document.createElement('tr')
+				td = document.createElement("td");
+				td.style.borderTop = 'none';
+				td.style.borderBottom = 'none';
+				td.textContent = "";
+				tr.appendChild(td)
+				tdc = 0;
+			}
+		}
+		if (tdc != 0) {
+			while (tdc < 5) {
+				td = document.createElement("td");
+				td.style.borderTop = 'none';
+				td.style.borderBottom = 'none'; td.textContent = "";
+				tr.appendChild(td);
+				tdc++;
+			};
+			checkboxesDiv.appendChild(tr);
+		};
+		//Security
+		var tdc = 0;
+		var tr = document.createElement("tr");
+		tr.style.borderTop = '1px solid #dee2e6';
+		var td = document.createElement("td");
+		td.style.borderTop = 'none';
+		td.style.borderBottom = 'none';
+		td.textContent = "Security";
+		td.style.fontWeight = 'bold';
+		tr.appendChild(td);
+		// console.log("total tags:" + topics.length);
+		for (var i = 0; i < topics.length; i++) {
+			var td = document.createElement("td");
+			td.style.borderTop = 'none';
+			td.style.borderBottom = 'none';
+			var checkbox = document.createElement("input");
+			name = topics[i];
+			if (!(name in security)) {
+				continue;
+			};
+			checkbox.type = "checkbox";
+			checkbox.name = "tag23";
+			checkbox.value = name;
+			td.appendChild(checkbox);
+			td.appendChild(document.createTextNode(" " + name));
+			tr.appendChild(td);
+			tdc++;
+			if (tdc === 5) {
+				checkboxesDiv.appendChild(tr);
+				tr = document.createElement('tr')
+				td = document.createElement("td");
+				td.style.borderTop = 'none';
+				td.style.borderBottom = 'none';
+				td.textContent = "";
+				tr.appendChild(td)
+				tdc = 0;
+			}
+		}
+		if (tdc != 0) {
+			while (tdc < 5) {
+				td = document.createElement("td");
+				td.style.borderTop = 'none';
+				td.style.borderBottom = 'none';
 				td.textContent = "";
 				tr.appendChild(td);
 				tdc++;
 			};
-            checkboxesDiv.appendChild(tr);
-        };
-		// var tr = document.createElement("tr");
-		// for(var i = 0; i < 6; i++){
-        // 	var td = document.createElement("td");
-		// 	// td.style.padding = "0.2rem";
-		// 	td.textContent = "";
-		// 	tr.appendChild(td);
-		// }
-		// checkboxesDiv.appendChild(tr);
-        //security
-        var tdc = 0;
-        var tr = document.createElement("tr");
-        var td = document.createElement("td");
-		// td.style.padding = "0.2rem";
-        td.textContent = "security";
-        td.style.fontWeight = 'bold';
-        tr.appendChild(td);
-        // console.log("total tags:" + topics.length);
-        for (var i = 0; i < topics.length; i++) {
-            var td = document.createElement("td");
-			// td.style.padding = "0.2rem";
-            var checkbox = document.createElement("input");
-            name = topics[i];
-            if(!(name in security)){
-                continue;
-            };
-            checkbox.type = "checkbox";
-            checkbox.name = "tag23";
-            checkbox.value = name;
-            td.appendChild(checkbox);
-            td.appendChild(document.createTextNode(" " + name));
-            tr.appendChild(td);
-            tdc++;
-            if (tdc === 5) {
-                checkboxesDiv.appendChild(tr);
-                tr = document.createElement('tr')
-                td = document.createElement('td');
-				// td.style.padding = "0.2rem";
-                td.textContent = "";
-                tr.appendChild(td)
-                tdc = 0;
-            }
-        }
-        if(tdc != 0){
-			while(tdc < 5){
-				td = document.createElement('td');
-				// td.style.padding = "0.2rem";
+			checkboxesDiv.appendChild(tr);
+		};
+		//use
+		var tdc = 0;
+		var tr = document.createElement("tr");
+		tr.style.borderTop = '1px solid #dee2e6';
+		var td = document.createElement("td");
+		td.style.borderTop = 'none';
+		td.style.borderBottom = 'none';
+		td.textContent = "Use";
+		td.style.fontWeight = 'bold';
+		tr.appendChild(td);
+		// console.log("total tags:" + topics.length);
+		for (var i = 0; i < topics.length; i++) {
+			var td = document.createElement("td");
+			td.style.borderTop = 'none';
+			td.style.borderBottom = 'none';
+			var checkbox = document.createElement("input");
+			name = topics[i];
+			if (!(name in use)) {
+				continue;
+			};
+			checkbox.type = "checkbox";
+			checkbox.name = "tag23";
+			checkbox.value = name;
+			td.appendChild(checkbox);
+			td.appendChild(document.createTextNode(" " + name));
+			tr.appendChild(td);
+			tdc++;
+			if (tdc === 5) {
+				checkboxesDiv.appendChild(tr);
+				tr = document.createElement('tr')
+				td = document.createElement("td");
+				td.style.borderTop = 'none';
+				td.style.borderBottom = 'none';
+				td.textContent = "";
+				tr.appendChild(td)
+				tdc = 0;
+			}
+		}
+		if (tdc != 0) {
+			while (tdc < 5) {
+				td = document.createElement("td");
+				td.style.borderTop = 'none';
+				td.style.borderBottom = 'none';
 				td.textContent = "";
 				tr.appendChild(td);
 				tdc++;
 			};
-            checkboxesDiv.appendChild(tr);
-        };
-		// var tr = document.createElement("tr");
-		// for(var i = 0; i < 6; i++){
-        // 	var td = document.createElement("td");
-		// 	// td.style.padding = "0.2rem";
-		// 	td.textContent = "";
-		// 	tr.appendChild(td);
-		// }
-		// checkboxesDiv.appendChild(tr);
-        //use
-        var tdc = 0;
-        var tr = document.createElement("tr");
-        var td = document.createElement("td");
-		// td.style.padding = "0.2rem";
-        td.textContent = "use";
-        td.style.fontWeight = 'bold';
-        tr.appendChild(td);
-        // console.log("total tags:" + topics.length);
-        for (var i = 0; i < topics.length; i++) {
-            var td = document.createElement("td");
-			// td.style.padding = "0.2rem";
-            var checkbox = document.createElement("input");
-            name = topics[i];
-            if(!(name in use)){
-                continue;
-            };
-            checkbox.type = "checkbox";
-            checkbox.name = "tag23";
-            checkbox.value = name;
-            td.appendChild(checkbox);
-            td.appendChild(document.createTextNode(" " + name));
-            tr.appendChild(td);
-            tdc++;
-            if (tdc === 5) {
-                checkboxesDiv.appendChild(tr);
-                tr = document.createElement('tr')
-                td = document.createElement('td');
-				// td.style.padding = "0.2rem";
-                td.textContent = "";
-                tr.appendChild(td)
-                tdc = 0;
-            }
-        }
-        if(tdc != 0){
-			while(tdc < 5){
-				td = document.createElement('td');
-				// td.style.padding = "0.2rem";
-				td.textContent = "";
-				tr.appendChild(td);
-				tdc++;
+			checkboxesDiv.appendChild(tr);
+		};
+		// 获取所有点选框  
+		var checkboxes = document.getElementsByName('tag23');
+		// 遍历所有点选框并将它们的状态设置为已勾选  
+		for (var i = 0; i < checkboxes.length; i++) {
+			if (checkboxes[i].value === "Core DNS documents") {
+				checkboxes[i].checked = true;
 			};
-            checkboxesDiv.appendChild(tr);
-        };
-		// var tr = document.createElement("tr");
-		// for(var i = 0; i < 6; i++){
-        // 	var td = document.createElement("td");
-		// 	// td.style.padding = "0.2rem";
-		// 	td.textContent = "";
-		// 	tr.appendChild(td);
-		// }
-		// checkboxesDiv.appendChild(tr);
-        // 获取所有点选框  
-        var checkboxes = document.getElementsByName('tag23');
-        // 遍历所有点选框并将它们的状态设置为已勾选  
-        for (var i = 0; i < checkboxes.length; i++) {
-            if (checkboxes[i].value === "Core DNS documents"){
-                checkboxes[i].checked = true;
-            };
-        }
-        upgradetable();
-        // 绑定事件，点击 checkbox 筛选表格
-        var checkboxes = document.getElementsByName("tag23");
-        for (var i = 0; i < checkboxes.length; i++) {
-            checkboxes[i].addEventListener("change", function () {
-                if (this.checked){
-                    chacked_topic[this.value] = 1;
-                }else{
-                    delete(chacked_topic[this.value]);
-                }
-                upgradetable();
-            });
-        }
-        ////////////////////////////////////////////////////////////////
-        // 全选status
-        var button_rfc_status_s = document.getElementById('rfc_status_s');
-        // 添加点击事件监听器
-        button_rfc_status_s.addEventListener('click', function () {
-            var checkboxes = document.getElementsByName('names');
-            for (var i = 0; i < checkboxes.length; i++) {
-                checkboxes[i].checked = true;
-                chacked_status[checkboxes[i].value] = 1
-            }
-            upgradetable();
-        });
-        // 全不选status
-        var button_rfc_status_uns = document.getElementById('rfc_status_uns');
-        // 添加点击事件监听器
-        button_rfc_status_uns.addEventListener('click', function () {
-            var checkboxes = document.getElementsByName('names');
-            for (var i = 0; i < checkboxes.length; i++) {
-                checkboxes[i].checked = false;
-                delete chacked_status[checkboxes[i].value];
-            }
-            upgradetable();
-        });
-        // 全选topic
-        var button_topic_s = document.getElementById('topic_s');
-        // 添加点击事件监听器
-        button_topic_s.addEventListener('click', function () {
-            var checkboxes = document.getElementsByName('tag23');
-            for (var i = 0; i < checkboxes.length; i++) {
-                checkboxes[i].checked = true;
-                chacked_topic[checkboxes[i].value] = 1;
-            }
-            upgradetable()
-        });
-        // 全不选topic
-        var button_topic_uns = document.getElementById('topic_uns');
-        // 添加点击事件监听器
-        button_topic_uns.addEventListener('click', function () {
-            var checkboxes = document.getElementsByName('tag23');
-            for (var i = 0; i < checkboxes.length; i++) {
-                checkboxes[i].checked = false;
-                delete chacked_topic[checkboxes[i].value]
-            }
-            upgradetable()
-        });
-        function upgradetable() {
-            //console.log(chacked_status)
-            //console.log(chacked_topic)
-            var table = document.getElementById("myTable");
-            var rows = table.getElementsByTagName("tr");
-            for (var j = 1; j < rows.length; j++) {
-                var tag0 = rows[j].getElementsByTagName("td")[0].innerText;
-                var tag1 = rows[j].getElementsByTagName("td")[1].innerText;
-                var tag2 = rows[j].getElementsByTagName("td")[2].innerText;
-                //console.log(tag0)
-                if ((tag0 in chacked_status) && ((tag1 in chacked_topic) || (tag2 in chacked_topic))) {
-                    rows[j].style.display = "";
-                }else{
-                    rows[j].style.display = "none";
-                }
-            }
-        }
-        // 获取元素
-        var numberSpan = document.getElementById('rfcsnumber');
-        // 更新数字
-        var newNumber = rows.length-1;
-        numberSpan.textContent = newNumber;
-        // 获取元素
-        var numberSpan = document.getElementById('labelsnumber');
-        // 更新数字
-        var newNumber = topics.length;
-        numberSpan.textContent = newNumber;
-    </script>
+		}
+		upgradetable();
+		// 绑定事件，点击 checkbox 筛选表格
+		var checkboxes = document.getElementsByName("tag23");
+		for (var i = 0; i < checkboxes.length; i++) {
+			checkboxes[i].addEventListener("change", function () {
+				if (this.checked) {
+					chacked_topic[this.value] = 1;
+				} else {
+					delete (chacked_topic[this.value]);
+				}
+				upgradetable();
+			});
+		}
+		////////////////////////////////////////////////////////////////
+		// 全选status
+		var button_rfc_status_s = document.getElementById('rfc_status_s');
+		// 添加点击事件监听器
+		button_rfc_status_s.addEventListener('click', function () {
+			var checkboxes = document.getElementsByName('names');
+			for (var i = 0; i < checkboxes.length; i++) {
+				checkboxes[i].checked = true;
+				chacked_status[checkboxes[i].value] = 1
+			}
+			upgradetable();
+		});
+		// 全不选status
+		var button_rfc_status_uns = document.getElementById('rfc_status_uns');
+		// 添加点击事件监听器
+		button_rfc_status_uns.addEventListener('click', function () {
+			var checkboxes = document.getElementsByName('names');
+			for (var i = 0; i < checkboxes.length; i++) {
+				checkboxes[i].checked = false;
+				delete chacked_status[checkboxes[i].value];
+			}
+			upgradetable();
+		});
+		// 全选topic
+		var button_topic_s = document.getElementById('topic_s');
+		// 添加点击事件监听器
+		button_topic_s.addEventListener('click', function () {
+			var checkboxes = document.getElementsByName('tag23');
+			for (var i = 0; i < checkboxes.length; i++) {
+				checkboxes[i].checked = true;
+				chacked_topic[checkboxes[i].value] = 1;
+			}
+			upgradetable()
+		});
+		// 全不选topic
+		var button_topic_uns = document.getElementById('topic_uns');
+		// 添加点击事件监听器
+		button_topic_uns.addEventListener('click', function () {
+			var checkboxes = document.getElementsByName('tag23');
+			for (var i = 0; i < checkboxes.length; i++) {
+				checkboxes[i].checked = false;
+				delete chacked_topic[checkboxes[i].value]
+			}
+			upgradetable()
+		});
+		function upgradetable() {
+			var shown_count = 0;
+			//console.log(chacked_status)
+			//console.log(chacked_topic)
+			var table = document.getElementById("myTable");
+			var rows = table.getElementsByTagName("tr");
+			for (var j = 1; j < rows.length; j++) {
+				var tag0 = rows[j].getElementsByTagName("td")[0].innerText;
+				var tag1 = rows[j].getElementsByTagName("td")[1].innerText;
+				var tag2 = rows[j].getElementsByTagName("td")[2].innerText;
+				//console.log(tag0)
+				if ((tag0 in chacked_status) && ((tag1 in chacked_topic) || (tag2 in chacked_topic))) {
+					rows[j].style.display = "";
+					shown_count++;
+				} else {
+					rows[j].style.display = "none";
+				}
+			}
+			// 获取正在现实的RFC数量元素
+			var numberSpan = document.getElementById('rfcshowed');
+			// 更新数字
+			numberSpan.textContent = shown_count;
+		}
+		// 获取元素
+		var numberSpan = document.getElementById('rfcsnumber');
+		// 更新数字
+		var newNumber = rows.length - 1;
+		numberSpan.textContent = newNumber;
+		// 获取元素
+		var numberSpan = document.getElementById('labelsnumber');
+		// 更新数字
+		var newNumber = topics.length;
+		numberSpan.textContent = newNumber;
+	</script>
 </body>
