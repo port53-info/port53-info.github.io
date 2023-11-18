@@ -3,29 +3,38 @@ title: Open Encrypted DNS Servers
 date: 2023-11-14
 ---
 
-We scan the IPv4 address space for open DNS servers supporting DNS-over-TLS (DoT, [RFC 7858](https://datatracker.ietf.org/doc/html/rfc7858)), DNS-over-HTTPS (DoH, [RFC 8484](https://datatracker.ietf.org/doc/html/rfc8484)), DNS-over-QUIC (DoQ, [RFC 9250](https://datatracker.ietf.org/doc/html/rfc9250)), and DoH3. 
+We scan the IPv4 address space for servers supporting DNS-over-TLS (DoT, [RFC 7858](https://datatracker.ietf.org/doc/html/rfc7858)), DNS-over-HTTPS (DoH, [RFC 8484](https://datatracker.ietf.org/doc/html/rfc8484)), DNS-over-QUIC (DoQ, [RFC 9250](https://datatracker.ietf.org/doc/html/rfc9250)), and DoH3. 
+Here we provide statistics and data about open encrypted DNS servers, including their IP addresses, authentication domain names (ADN), locations, and certificate verification status. 
 
-Here we provide statistics and lists of open encrypted DNS servers, including their IP addresses, authentication domain names (ADN), locations, and certificate verification status. 
+Our scan is performed monthly. 
+Data for DoT/DoH dates back to Dec 2021, and DoQ/DoH3 dates back to Jul 2022.
 
-Our scan is performed monthly and dates back to December 2021.
-
-# Related publications:
-> [IMC '19] Chaoyi Lu, Baojun Liu, Zhou Li, Shuang Hao, Haixin Duan, Mingming Zhang, Chunying Leng, Ying Liu, Zaifeng Zhang, and Jianping Wu. An End-to-End, Large-Scale Measurement of DNS-over-Encryption: How Far Have We Come?. In Proceedings of the 2019 ACM Internet Measurement Conference <br>
+## Our publications
+> [IMC '19] **Chaoyi Lu**, **Baojun Liu**, Zhou Li, Shuang Hao, **Haixin Duan**, Mingming Zhang, Chunying Leng, Ying Liu, Zaifeng Zhang, and Jianping Wu. An End-to-End, Large-Scale Measurement of DNS-over-Encryption: How Far Have We Come?. In Proceedings of the 2019 ACM Internet Measurement Conference <br>
 > <a class="btn btn-outline-primary btn-page-header" href="/files/3355369.3355580.pdf" target="_blank" rel="noopener">Paper</a> 
 > <a class="btn btn-outline-primary btn-page-header" href="/files/acm_3355369.3355580.bib" target="_blank" rel="noopener">Cite</a>
 > <a class="btn btn-outline-primary btn-page-header" href="https://www.irtf.org/anrp/" target="_blank" rel="noopener">IRTF Applied Networking Research Prize Recepient</a>
 
-> [ToN '23] Ruixuan Li, Xiaofeng Jia, Zhenyong Zhang, Jun Shao, Rongxing Lu, Jingqiang Lin, Xiaoqi Jia, Guiyi Wei. A Longitudinal and Comprehensive Measurement of DNS Strict Privacy. In IEEE/ACM Transactions on Networking
+> [ToN '23] **Ruixuan Li**, Xiaofeng Jia, Zhenyong Zhang, Jun Shao, Rongxing Lu, Jingqiang Lin, Xiaoqi Jia, Guiyi Wei. A Longitudinal and Comprehensive Measurement of DNS Strict Privacy. In IEEE/ACM Transactions on Networking
 <a class="btn btn-outline-primary btn-page-header" href="/files/A_Longitudinal_and_Comprehensive_Measurement_of_DNS_Strict_Privacy.pdf" target="_blank" rel="noopener">Paper</a> 
 <a class="btn btn-outline-primary btn-page-header" href="/files/IEEE Xplore Citation BibTeX Download 2023.11.11.4.34.55.bib" target="_blank" rel="noopener">Cite</a>
 
+<br>
 
-# Statistics and summary:
-## A) Count of IPs and ADNs of encrypted DNS servers:
+## Statistics and summary
+### A) Count of IPs and ADNs of encrypted DNS servers
+
+Following an evident growing trend in early stages since proposal, the count of IPs and ADNs associated with each protocol shows small fluctuations in recent years. 
+(Data during May and Sept 2023 is unfortunately unavailable due to operational reasons)
+
 
 <div id="graph_a" style="height: 650%"></div>
 
-## B) Validity of certificates
+### B) Validity of certificates
+
+Invalid certificates, especially self-signed certificates, still pose as a substantial issue for open DoT servers (>30% of all).
+The same problem is minor for other protocols.
+
 
 <div id="graph_b" style="height: 350%"></div>
 
@@ -41,7 +50,7 @@ Our scan is performed monthly and dates back to December 2021.
     var app = {};
     var option;
     const colors = [
-  '#2b821d',
+  '#3098DC',
   '#e6b600'
 ];
 const dot = [
@@ -767,7 +776,7 @@ option = {
     window.addEventListener('resize', myChart.resize);
   </script>
 
-# Raw data:
+## Raw data
 Here we provide open access to raw data that lags one month behind. Drop us an [email](luchaoyi@tsinghua.edu.cn) if you need the most recent scanning results.
 
 | Date      | DoT servers                                | DoH servers                                | DoQ servers                                | DoH3 servers                                 |

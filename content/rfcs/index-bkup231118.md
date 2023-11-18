@@ -3,24 +3,24 @@ title: DNS RFC Repository
 date: 2023-11-01
 ---
 
-We maintain an up-to-date repository of DNS-related RFCs. 
-To help quickly gather and browse documents of interest, we also give finer-grained labels under particular topics (e.g., DNSSEC, IDNA, DNS privacy) to each RFC.
+DNS turns **40** this year!
+We maintain an up-to-date repository of DNS-related RFCs. To help community members quickly gather documents of
+interest, we also give finer-grained labels under particular topics (e.g., DNSSEC, IDNA, DNS privacy) to each RFC.
 
-This repository is expected to be updated once a month. 
-It now comprises **<span id="rfcsnumber">42</span>** RFCs under **<span
-	id="labelsnumber">42</span>** labels, including:
+What's within the list:
 
-- Documents subsequent to RFC 882
+- Documents subsequent to RFC 882 (November 1983)
 - DNS specification: namespace, name registration, DNS protocol
 - DNS operation: functionalities and recommendations about running DNS services
 - DNS security: security extensions, threat analysis, and proposed solutions
 - DNS use: Internet functionalities that explicitly rely on the DNS (e.g., SPF, DANE)
 - Obsoleted/deprecated versions of the above
 
+The list updates once a month. It now includes **<span id="rfcsnumber">42</span>** RFCs under **<span
+	id="labelsnumber">42</span>** labels.
 
-Comments or suggestions are extremely welcome! 
-Drop us an [email](luchaoyi@tsinghua.edu.cn) if you think an RFC is missing, mis-labeled, should be removed, or if you have any other feedback.
-
+Comments or suggestions are extremely welcome! Drop us an [email](luchaoyi@tsinghua.edu.cn) if you think an RFC is
+missing, mis-labeled, should be removed, or if you have any other feedback.
 
 <body>
 	<!-- <table id="checkbutton" style="border-top: 0px;"></table> -->
@@ -3902,7 +3902,7 @@ Drop us an [email](luchaoyi@tsinghua.edu.cn) if you think an RFC is missing, mis
 		var td = document.createElement("td");
 		td.style.borderTop = 'none';
 		td.style.borderBottom = 'none';
-		td.textContent = "Application";
+		td.textContent = "Use";
 		td.style.fontWeight = 'bold';
 		tr.appendChild(td);
 		// console.log("total tags:" + topics.length);
