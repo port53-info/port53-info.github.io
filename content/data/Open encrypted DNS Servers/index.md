@@ -784,7 +784,7 @@ option = {
 
 ## Raw data
 We provide open access to raw data from the two most recent scans. 
-Drop us an [email](luchaoyi@tsinghua.edu.cn) if you need scanning results from other months.
+Drop us an [email](mailto:luchaoyi@tsinghua.edu.cn) if you need scanning results from other months.
 
 | Date      | DoT servers                                | DoH servers                                | DoQ servers                                | DoH3 servers                                 |
 | --------- | ------------------------------------------ | ------------------------------------------ | ------------------------------------------ | -------------------------------------------- |

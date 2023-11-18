@@ -19,7 +19,7 @@ It now comprises **<span id="rfcsnumber">42</span>** RFCs under **<span
 
 
 Comments or suggestions are extremely welcome! 
-Drop us an [email](luchaoyi@tsinghua.edu.cn) if you think an RFC is missing, mis-labeled, should be removed, or if you have any other feedback.
+Drop us an [email](mailto:luchaoyi@tsinghua.edu.cn) if you think an RFC is missing, mis-labeled, should be removed, or if you have any other feedback.
 
 
 <body>
