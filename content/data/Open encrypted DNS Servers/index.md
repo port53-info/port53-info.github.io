@@ -22,7 +22,7 @@ Data for DoT/DoH dates back to Dec 2021, and DoQ/DoH3 dates back to Jul 2022.
 <br>
 
 ## Statistics and summary
-### A) Count of IPs and ADNs of encrypted DNS servers
+**A) Count of IPs and ADNs of encrypted DNS servers**
 
 Following an evident growing trend in early stages since proposal, the count of IPs and ADNs associated with each protocol shows small fluctuations in recent years. 
 (Data during May and Sept 2023 is unfortunately unavailable due to operational reasons)
@@ -30,7 +30,10 @@ Following an evident growing trend in early stages since proposal, the count of 
 
 <div id="graph_a" style="height: 650%"></div>
 
-### B) Validity of certificates
+<br>
+<br>
+
+**B) Validity of certificates**
 
 Invalid certificates, especially self-signed certificates, still pose as a substantial issue for open DoT servers (>30% of all).
 The same problem is minor for other protocols.
@@ -50,8 +53,8 @@ The same problem is minor for other protocols.
     var app = {};
     var option;
     const colors = [
-  '#3098DC',
-  '#e6b600'
+  '#2A8DCE',
+  '#C88B27'
 ];
 const dot = [
   ['2021-12', 7833, 2247],
@@ -776,10 +779,14 @@ option = {
     window.addEventListener('resize', myChart.resize);
   </script>
 
+<br>
+
+
 ## Raw data
-Here we provide open access to raw data that lags one month behind. Drop us an [email](luchaoyi@tsinghua.edu.cn) if you need the most recent scanning results.
+We provide open access to raw data from the two most recent scans. 
+Drop us an [email](luchaoyi@tsinghua.edu.cn) if you need scanning results from other months.
 
 | Date      | DoT servers                                | DoH servers                                | DoQ servers                                | DoH3 servers                                 |
 | --------- | ------------------------------------------ | ------------------------------------------ | ------------------------------------------ | -------------------------------------------- |
-| Oct, 2023 | [dot-202310.json](/files/dot-2023-10.json) | [doh-202310.json](/files/doh-2023-10.json) | [doq-202310.json](/files/doq-2023-10.json) | [doh3-202310.json](/files/doh3-2023-10.json) |
-| Apr, 2023 | [dot-202304.json](/files/dot-2023-04.json) | [doh-202304.json](/files/doh-2023-04.json) | [doq-202304.json](/files/doq-2023-04.json) | [doh3-202304.json](/files/doh3-2023-04.json) |
+| October 2023 | [dot-202310.json](/files/dot-2023-10.json) | [doh-202310.json](/files/doh-2023-10.json) | [doq-202310.json](/files/doq-2023-10.json) | [doh3-202310.json](/files/doh3-2023-10.json) |
+| April 2023 | [dot-202304.json](/files/dot-2023-04.json) | [doh-202304.json](/files/doh-2023-04.json) | [doq-202304.json](/files/doq-2023-04.json) | [doh3-202304.json](/files/doh3-2023-04.json) |
