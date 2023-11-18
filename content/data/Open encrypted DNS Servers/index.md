@@ -54,7 +54,7 @@ The same problem is minor for other protocols.
     var option;
     const colors = [
   '#2A8DCE',
-  '#C88B27'
+  '#D9982D'
 ];
 const dot = [
   ['2021-12', 7833, 2247],
