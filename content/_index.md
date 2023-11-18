@@ -12,7 +12,6 @@ sections:
       #   filename: welcome.jpg
       text: |
         # **Welcome to PORT-53.INFO**
-        Hello, there!
         Based at Tsinghua University, we are a research team with particular interests in DNS and measurement-oriented topics. On this page, we maintain a collection of useful DNS material, measurement reports, and up-to-date datasets extended from our publications and ongoing works. 
         ##  Our team members
           - [Chaoyi Lu](https://chaoyi.lu), postdoctoral researcher, Tsinghua University
