@@ -14,12 +14,12 @@ It now comprises **<span id="rfcsnumber">42</span>** RFCs under **<span
 - DNS specification: namespace, name registration, DNS protocol
 - DNS operation: functionalities and recommendations about running DNS services
 - DNS security: security extensions, threat analysis, and proposed solutions
-- DNS use: Internet functionalities that explicitly rely on the DNS (e.g., SPF, DANE)
+- DNS application: Internet functionalities that explicitly rely on the DNS (e.g., SPF, DANE)
 - Obsoleted/deprecated versions of the above
 
 
 Comments or suggestions are extremely welcome! 
-Drop us an [email](mailto:luchaoyi@tsinghua.edu.cn) if you think an RFC is missing, mis-labeled, should be removed, or if you have any other feedback.
+[Contact us](mailto:luchaoyi@tsinghua.edu.cn) if you find an RFC missing, mis-labeled, should be removed, or for any other feedback.
 
 
 <body>

@@ -1,6 +1,6 @@
 ---
 title: Open Encrypted DNS Servers
-date: 2023-11-14
+date: 2023-11-18
 ---
 
 We scan the IPv4 address space for servers supporting DNS-over-TLS (DoT, [RFC 7858](https://datatracker.ietf.org/doc/html/rfc7858)), DNS-over-HTTPS (DoH, [RFC 8484](https://datatracker.ietf.org/doc/html/rfc8484)), DNS-over-QUIC (DoQ, [RFC 9250](https://datatracker.ietf.org/doc/html/rfc9250)), and DoH3. 
@@ -12,12 +12,12 @@ Data for DoT/DoH dates back to Dec 2021, and DoQ/DoH3 dates back to Jul 2022.
 ## Our publications
 > [IMC '19] **Chaoyi Lu**, **Baojun Liu**, Zhou Li, Shuang Hao, **Haixin Duan**, Mingming Zhang, Chunying Leng, Ying Liu, Zaifeng Zhang, and Jianping Wu. An End-to-End, Large-Scale Measurement of DNS-over-Encryption: How Far Have We Come?. In Proceedings of the 2019 ACM Internet Measurement Conference <br>
 > <a class="btn btn-outline-primary btn-page-header" href="/files/3355369.3355580.pdf" target="_blank" rel="noopener">Paper</a> 
-> <a class="btn btn-outline-primary btn-page-header" href="/files/acm_3355369.3355580.bib" target="_blank" rel="noopener">Cite</a>
+> <a class="btn btn-outline-primary btn-page-header" href="/files/acm_3355369.3355580.bib" target="_blank" rel="noopener">Bibtex</a>
 > <a class="btn btn-outline-primary btn-page-header" href="https://www.irtf.org/anrp/" target="_blank" rel="noopener">IRTF Applied Networking Research Prize Recepient</a>
 
 > [ToN '23] **Ruixuan Li**, Xiaofeng Jia, Zhenyong Zhang, Jun Shao, Rongxing Lu, Jingqiang Lin, Xiaoqi Jia, Guiyi Wei. A Longitudinal and Comprehensive Measurement of DNS Strict Privacy. In IEEE/ACM Transactions on Networking
 <a class="btn btn-outline-primary btn-page-header" href="/files/A_Longitudinal_and_Comprehensive_Measurement_of_DNS_Strict_Privacy.pdf" target="_blank" rel="noopener">Paper</a> 
-<a class="btn btn-outline-primary btn-page-header" href="/files/IEEE Xplore Citation BibTeX Download 2023.11.11.4.34.55.bib" target="_blank" rel="noopener">Cite</a>
+<a class="btn btn-outline-primary btn-page-header" href="/files/IEEE Xplore Citation BibTeX Download 2023.11.11.4.34.55.bib" target="_blank" rel="noopener">Bibtex</a>
 
 <br>
 
