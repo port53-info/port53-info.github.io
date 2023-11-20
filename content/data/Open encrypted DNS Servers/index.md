@@ -15,7 +15,7 @@ Data for DoT/DoH dates back to Dec 2021, and DoQ/DoH3 dates back to Jul 2022.
 > <a class="btn btn-outline-primary btn-page-header" href="/files/acm_3355369.3355580.bib" target="_blank" rel="noopener">Bibtex</a>
 > <a class="btn btn-outline-primary btn-page-header" href="https://www.irtf.org/anrp/" target="_blank" rel="noopener">IRTF Applied Networking Research Prize Recepient</a>
 
-> [ToN '23] **Ruixuan Li**, Xiaofeng Jia, Zhenyong Zhang, Jun Shao, Rongxing Lu, Jingqiang Lin, Xiaoqi Jia, Guiyi Wei. A Longitudinal and Comprehensive Measurement of DNS Strict Privacy. In IEEE/ACM Transactions on Networking
+> [ToN '23] **Ruixuan Li**, Xiaofeng Jia, Zhenyong Zhang, Jun Shao, Rongxing Lu, Jingqiang Lin, Xiaoqi Jia, Guiyi Wei. A Longitudinal and Comprehensive Measurement of DNS Strict Privacy. In IEEE/ACM Transactions on Networking <br>
 <a class="btn btn-outline-primary btn-page-header" href="/files/A_Longitudinal_and_Comprehensive_Measurement_of_DNS_Strict_Privacy.pdf" target="_blank" rel="noopener">Paper</a> 
 <a class="btn btn-outline-primary btn-page-header" href="/files/IEEE Xplore Citation BibTeX Download 2023.11.11.4.34.55.bib" target="_blank" rel="noopener">Bibtex</a>
 
