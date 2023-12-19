@@ -1,6 +1,12 @@
 import csv
 import re
 
+'''
+使用前！请注意！csv内容格式！
+本代码鲁棒性不强（就没有）
+参考data_template.csv对当前要处理的csv文件进行确认
+否则请debug代码，并取消下方的直接替换web源文件的操作，进行调试
+'''
 
 def csv_to_html(input_file, output_file):
     with open(input_file, 'r', encoding='utf-8') as csvfile:
@@ -24,6 +30,9 @@ def csv_to_html(input_file, output_file):
     with open(output_file, 'w', encoding='utf-8') as htmlfile:
         htmlfile.write(html)
     return html
+
+
+################################################################
 
 input_file = 'data.csv'  # 替换为你的CSV文件路径
 output_file = 'data.html'  # 输出的HTML文件名

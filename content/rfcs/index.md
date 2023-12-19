@@ -1,6 +1,6 @@
 ---
 title: DNS RFC Repository
-date: 2023-11-01
+date: 2023-12-19
 ---
 
 We maintain an up-to-date repository of DNS-related RFCs. 
@@ -45,12 +45,36 @@ Comments or suggestions are extremely welcome!
 	<button class="btn btn-outline-primary btn-page-header"><strong><span id="rfcshowed">42</span></strong> rfcs shown</button>
 	<br>
 	<table id=myTable>	<tr>
-		<td><strong>RFC status</strong></td>
+		<td><strong>﻿RFC status</strong></td>
 		<td><strong>Topic 1</strong></td>
 		<td><strong>Topic 2</strong></td>
 		<td><strong>RFC</strong></td>
 		<td><strong>Title</strong></td>
 		<td><strong>Obsoleted by</strong></td>
+	</tr>
+	<tr>
+		<td>Proposed Standard</td>
+		<td>PKI Application</td>
+		<td>SRV/SVCB Functionalities</td>
+		<td><a href="https://www.rfc-editor.org/info/rfc9525">9525</a></td>
+		<td>Service Identity in TLS</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>Informational</td>
+		<td>Filtering</td>
+		<td></td>
+		<td><a href="https://www.rfc-editor.org/info/rfc9505">9505</a></td>
+		<td>A Survey of Worldwide Censorship Techniques</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>Informational</td>
+		<td>Servicing</td>
+		<td></td>
+		<td><a href="https://www.rfc-editor.org/info/rfc9498">9498</a></td>
+		<td>The GNU Name System</td>
+		<td></td>
 	</tr>
 	<tr>
 		<td>Proposed Standard</td>
@@ -342,7 +366,7 @@ Comments or suggestions are extremely welcome!
 	</tr>
 	<tr>
 		<td>Proposed Standard</td>
-		<td>Servicing</td>
+		<td>Transaction Authentication</td>
 		<td></td>
 		<td><a href="https://www.rfc-editor.org/info/rfc9018">9018</a></td>
 		<td>Interoperable Domain Name System (DNS) Server Cookies</td>
@@ -974,7 +998,7 @@ Comments or suggestions are extremely welcome!
 	</tr>
 	<tr>
 		<td>Proposed Standard</td>
-		<td>Servicing</td>
+		<td>Transaction Authentication</td>
 		<td></td>
 		<td><a href="https://www.rfc-editor.org/info/rfc7873">7873</a></td>
 		<td>Domain Name System (DNS) Cookies</td>
