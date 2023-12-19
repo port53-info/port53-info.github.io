@@ -29,7 +29,7 @@ sections:
           - [Nov 2023] New material available: topic-oriented repository of DNS-related RFCs.
           - [Nov 2023] Our website is on!
 
-        (Last modified: Nov 18, 2023)
+        (Last modified: Dec 19, 2023)
     design:
       columns: '1'
         
