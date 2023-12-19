@@ -10,7 +10,7 @@
 # 维护方式
 1. 从Github下载最新项目文件
 2. 本地修改并使用`Hugo`进行测试
-3. 没问题后`hugo clean`清除本地生成文件，并git commit & push
+3. 没问题后git commit 并 push（public目录可以ignore）
 4. Github部署了自动化执行，会自动生成并更新，整个过程约几分钟
 
 # 目录结构及维护
