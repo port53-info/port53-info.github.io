@@ -23,13 +23,14 @@ sections:
           - Junzhe Sun, undergraduate student, Beijing University of Posts and Telecommunications
           - Jiasheng Huang, undergraduate student, Tsinghua University
         ## Updates
+          - [Jan 2024] Monthly scan results of open encrypted DNS servers updated.
           - [Dec 2023] Monthly scan results of open encrypted DNS servers updated.
           - [Dec 2023] Topic-oriented repository of DNS-related RFCs updated.
           - [Nov 2023] New data available: monthly scan results of open encrypted DNS servers.
           - [Nov 2023] New material available: topic-oriented repository of DNS-related RFCs.
           - [Nov 2023] Our website is on!
 
-        (Last modified: Dec 19, 2023)
+        (Last modified: Jan 20, 2024)
     design:
       columns: '1'
         
