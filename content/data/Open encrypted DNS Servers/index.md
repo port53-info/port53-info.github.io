@@ -1,20 +1,25 @@
 ---
 title: Open Encrypted DNS Servers
-date: 2024-01-20
+date: 2024-02-16
 ---
 
 We scan the IPv4 address space for servers supporting DNS-over-TLS (DoT, [RFC 7858](https://datatracker.ietf.org/doc/html/rfc7858)), DNS-over-HTTPS (DoH, [RFC 8484](https://datatracker.ietf.org/doc/html/rfc8484)), DNS-over-QUIC (DoQ, [RFC 9250](https://datatracker.ietf.org/doc/html/rfc9250)), and DoH3.
 Here we provide statistics and data about open encrypted DNS servers, including their IP addresses, authentication domain names (ADN), locations, and certificate verification status.
 
-Our scan is performed monthly.
-Data for DoT/DoH dates back to Dec 2021, and DoQ/DoH3 dates back to Jul 2022.
+## Related publications
 
-## Our publications
+> [WWW '23] **Ruixuan Li**, **Baojun Liu**, **Chaoyi Lu**, **Haixin Duan**, and Jun Shao. A Worldwide View on the Reachability of Encrypted DNS Services. To appear in Proceedings of the Web Conference 2024 <br>
+<!--
+<a class="btn btn-outline-primary btn-page-header" href="/files/3355369.3355580.pdf" target="_blank" rel="noopener">Paper</a>
+<a class="btn btn-outline-primary btn-page-header" href="/files/acm_3355369.3355580.bib" target="_blank" rel="noopener">Bibtex</a>
+<a class="btn btn-outline-primary btn-page-header" href="https://github.com/DNS-over-Encryption/Reachability" target="_blank" rel="noopener">Code</a>
+-->
 
 > [IMC '19] **Chaoyi Lu**, **Baojun Liu**, Zhou Li, Shuang Hao, **Haixin Duan**, Mingming Zhang, Chunying Leng, Ying Liu, Zaifeng Zhang, and Jianping Wu. An End-to-End, Large-Scale Measurement of DNS-over-Encryption: How Far Have We Come?. In Proceedings of the 2019 ACM Internet Measurement Conference <br>
 <a class="btn btn-outline-primary btn-page-header" href="/files/3355369.3355580.pdf" target="_blank" rel="noopener">Paper</a>
 <a class="btn btn-outline-primary btn-page-header" href="/files/acm_3355369.3355580.bib" target="_blank" rel="noopener">Bibtex</a>
 <a class="btn btn-outline-primary btn-page-header" href="https://www.irtf.org/anrp/" target="_blank" rel="noopener">IRTF Applied Networking Research Prize Recepient</a>
+
 
 > [ToN '23] **Ruixuan Li**, Xiaofeng Jia, Zhenyong Zhang, Jun Shao, Rongxing Lu, Jingqiang Lin, Xiaoqi Jia, Guiyi Wei. A Longitudinal and Comprehensive Measurement of DNS Strict Privacy. In IEEE/ACM Transactions on Networking <br>
 <a class="btn btn-outline-primary btn-page-header" href="/files/A_Longitudinal_and_Comprehensive_Measurement_of_DNS_Strict_Privacy.pdf" target="_blank" rel="noopener">Paper</a>
@@ -24,10 +29,12 @@ Data for DoT/DoH dates back to Dec 2021, and DoQ/DoH3 dates back to Jul 2022.
 
 ## Statistics and summary
 
-**A) Count of IPs and ADNs of encrypted DNS servers**
+Our scan is performed monthly.
+Data for DoT/DoH dates back to Dec 2021, and DoQ/DoH3 dates back to Jul 2022.
+
+**A) Count of IPs (v4) and ADNs of encrypted DNS servers**
 
 Following an evident growing trend in early stages since proposal, the count of IPs and ADNs associated with each protocol shows small fluctuations in recent years.
-(Data during May and Sept 2023 is unfortunately unavailable due to operational reasons)
 
 <div id="graph_a" style="height: 650%"></div>
 
@@ -628,7 +635,8 @@ option = {
 We provide open access to raw data from the two most recent scans.
 Drop us an [email](mailto:luchaoyi@tsinghua.edu.cn) if you need scanning results from other months.
 
-| Date         | DoT servers                                | DoH servers                                | DoQ servers                                | DoH3 servers                                 |
+| Description         | DoT servers                                | DoH servers                                | DoQ servers                                | DoH3 servers                                 |
 | ------------ | ------------------------------------------ | ------------------------------------------ | ------------------------------------------ | -------------------------------------------- |
-| December 2023 | [dot-202312.json](/files/dot-2023-12.json) | [doh-202312.json](/files/doh-2023-12.json) | [doq-202312.json](/files/doq-2023-12.json) | [doh3-202312.json](/files/doh3-2023-12.json) |
-| November 2023 | [dot-202311.json](/files/dot-2023-11.json) | [doh-202311.json](/files/doh-2023-11.json) | [doq-202311.json](/files/doq-2023-11.json) | [doh3-202311.json](/files/doh3-2023-11.json) |
+| December 2023 (IPv4) | [dot-202312.json](/files/dot-2023-12.json) | [doh-202312.json](/files/doh-2023-12.json) | [doq-202312.json](/files/doq-2023-12.json) | [doh3-202312.json](/files/doh3-2023-12.json) |
+| November 2023 (IPv4) | [dot-202311.json](/files/dot-2023-11.json) | [doh-202311.json](/files/doh-2023-11.json) | [doq-202311.json](/files/doq-2023-11.json) | [doh3-202311.json](/files/doh3-2023-11.json) |
+| DoE domains (with IPv6) | [dot-domain-v6.json](/files/dot-domain-v6.json) | [doh-domain-v6.json](/files/doh-domain-v6.json) | [doq-domain-v6.json](/files/doq-domain-v6.json) | [doh3-domain-v6.json](/files/doh3-domain-v6.json) |
