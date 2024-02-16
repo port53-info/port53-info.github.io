@@ -1,7 +1,7 @@
 ---
 # Leave the homepage title empty to use the site title
 title: About
-date: 2023-11-1
+date: 2024-2-16
 type: landing
 
 sections:
@@ -30,7 +30,7 @@ sections:
           - [Nov 2023] New material available: topic-oriented repository of DNS-related RFCs.
           - [Nov 2023] Our website is on!
 
-        (Last modified: Jan 20, 2024)
+        (Last modified: Feb 16, 2024)
     design:
       columns: '1'
         

@@ -8,7 +8,7 @@ Here we provide statistics and data about open encrypted DNS servers, including 
 
 ## Related publications
 
-> [WWW '23] **Ruixuan Li**, **Baojun Liu**, **Chaoyi Lu**, **Haixin Duan**, and Jun Shao. A Worldwide View on the Reachability of Encrypted DNS Services. To appear in Proceedings of the Web Conference 2024 <br>
+> [WWW '24] **Ruixuan Li**, **Baojun Liu**, **Chaoyi Lu**, **Haixin Duan**, and Jun Shao. A Worldwide View on the Reachability of Encrypted DNS Services. To appear in Proceedings of the Web Conference 2024 <br>
 <a class="btn btn-outline-primary btn-page-header" href="https://github.com/lrxgoat/DoE_Reachability/" target="_blank" rel="noopener">Code</a>
 
 
@@ -636,4 +636,4 @@ Drop us an [email](mailto:luchaoyi@tsinghua.edu.cn) if you need scanning results
 | ------------ | ------------------------------------------ | ------------------------------------------ | ------------------------------------------ | -------------------------------------------- |
 | December 2023 (IPv4) | [dot-202312.json](/files/dot-2023-12.json) | [doh-202312.json](/files/doh-2023-12.json) | [doq-202312.json](/files/doq-2023-12.json) | [doh3-202312.json](/files/doh3-2023-12.json) |
 | November 2023 (IPv4) | [dot-202311.json](/files/dot-2023-11.json) | [doh-202311.json](/files/doh-2023-11.json) | [doq-202311.json](/files/doq-2023-11.json) | [doh3-202311.json](/files/doh3-2023-11.json) |
-| DoE domains (with IPv6) | [dot-domain-v6.json](/files/dot-domain-v6.json) | [doh-domain-v6.json](/files/doh-domain-v6.json) | [doq-domain-v6.json](/files/doq-domain-v6.json) | [doh3-domain-v6.json](/files/doh3-domain-v6.json) |
+| DoE domains (with IPv6) | [dot-domain-v6.txt](/files/dot-domain-v6.txt) | [doh-domain-v6.txt](/files/doh-domain-v6.txt) | [doq-domain-v6.txt](/files/doq-domain-v6.txt) | [doh3-domain-v6.txt](/files/doh3-domain-v6.txt) |
