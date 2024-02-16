@@ -9,11 +9,8 @@ Here we provide statistics and data about open encrypted DNS servers, including 
 ## Related publications
 
 > [WWW '23] **Ruixuan Li**, **Baojun Liu**, **Chaoyi Lu**, **Haixin Duan**, and Jun Shao. A Worldwide View on the Reachability of Encrypted DNS Services. To appear in Proceedings of the Web Conference 2024 <br>
-<!--
-<a class="btn btn-outline-primary btn-page-header" href="/files/3355369.3355580.pdf" target="_blank" rel="noopener">Paper</a>
-<a class="btn btn-outline-primary btn-page-header" href="/files/acm_3355369.3355580.bib" target="_blank" rel="noopener">Bibtex</a>
-<a class="btn btn-outline-primary btn-page-header" href="https://github.com/DNS-over-Encryption/Reachability" target="_blank" rel="noopener">Code</a>
--->
+<a class="btn btn-outline-primary btn-page-header" href="https://github.com/lrxgoat/DoE_Reachability/" target="_blank" rel="noopener">Code</a>
+
 
 > [IMC '19] **Chaoyi Lu**, **Baojun Liu**, Zhou Li, Shuang Hao, **Haixin Duan**, Mingming Zhang, Chunying Leng, Ying Liu, Zaifeng Zhang, and Jianping Wu. An End-to-End, Large-Scale Measurement of DNS-over-Encryption: How Far Have We Come?. In Proceedings of the 2019 ACM Internet Measurement Conference <br>
 <a class="btn btn-outline-primary btn-page-header" href="/files/3355369.3355580.pdf" target="_blank" rel="noopener">Paper</a>
