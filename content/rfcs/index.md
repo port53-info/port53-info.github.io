@@ -45,12 +45,36 @@ Comments or suggestions are extremely welcome!
 	<button class="btn btn-outline-primary btn-page-header"><strong><span id="rfcshowed">42</span></strong> rfcs shown</button>
 	<br>
 	<table id=myTable>	<tr>
-		<td><strong>﻿RFC status</strong></td>
+		<td><strong>RFC status</strong></td>
 		<td><strong>Topic 1</strong></td>
 		<td><strong>Topic 2</strong></td>
 		<td><strong>RFC</strong></td>
 		<td><strong>Title</strong></td>
 		<td><strong>Obsoleted by</strong></td>
+	</tr>
+	<tr>
+		<td>Proposed Standard</td>
+		<td>SRV/SVCB Functionalities</td>
+		<td>Other Applications</td>
+		<td><a href="https://www.rfc-editor.org/info/rfc9540">9540</a></td>
+		<td>Discovery of Oblivious Services via Service Binding Records</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>Experimental</td>
+		<td>Encrypted DNS</td>
+		<td></td>
+		<td><a href="https://www.rfc-editor.org/info/rfc9539">9539</a></td>
+		<td>Unilateral Opportunistic Deployment of Encrypted Recursive-to-Authoritative DNS</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>Experimental</td>
+		<td>Other Applications</td>
+		<td></td>
+		<td><a href="https://www.rfc-editor.org/info/rfc9526">9526</a></td>
+		<td>Simple Provisioning of Public Names for Residential Networks</td>
+		<td></td>
 	</tr>
 	<tr>
 		<td>Proposed Standard</td>
@@ -66,6 +90,14 @@ Comments or suggestions are extremely welcome!
 		<td></td>
 		<td><a href="https://www.rfc-editor.org/info/rfc9520">9520</a></td>
 		<td>Negative Caching of DNS Resolution Failures</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>Informational</td>
+		<td>Other Applications</td>
+		<td></td>
+		<td><a href="https://www.rfc-editor.org/info/rfc9517">9517</a></td>
+		<td>A URN Namespace for the Data Documentation Initiative (DDI)</td>
 		<td></td>
 	</tr>
 	<tr>
@@ -106,6 +138,14 @@ Comments or suggestions are extremely welcome!
 		<td></td>
 		<td><a href="https://www.rfc-editor.org/info/rfc9464">9464</a></td>
 		<td>Internet Key Exchange Protocol Version 2 (IKEv2) Configuration for Encrypted DNS</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>Proposed Standard</td>
+		<td>Encrypted DNS</td>
+		<td>Servicing</td>
+		<td><a href="https://www.rfc-editor.org/info/rfc9463">9463</a></td>
+		<td>DHCP and Router Advertisement Options for the Discovery of Network-designated Resolvers (DNR)</td>
 		<td></td>
 	</tr>
 	<tr>
