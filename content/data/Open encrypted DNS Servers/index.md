@@ -1,6 +1,6 @@
 ---
 title: Open Encrypted DNS Servers
-date: 2024-02-16
+date: 2024-03-18
 ---
 
 We scan the IPv4 address space for servers supporting DNS-over-TLS (DoT, [RFC 7858](https://datatracker.ietf.org/doc/html/rfc7858)), DNS-over-HTTPS (DoH, [RFC 8484](https://datatracker.ietf.org/doc/html/rfc8484)), DNS-over-QUIC (DoQ, [RFC 9250](https://datatracker.ietf.org/doc/html/rfc9250)), and DoH3.
