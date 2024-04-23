@@ -45,12 +45,20 @@ Comments or suggestions are extremely welcome!
 	<button class="btn btn-outline-primary btn-page-header"><strong><span id="rfcshowed">42</span></strong> rfcs shown</button>
 	<br>
 	<table id=myTable>	<tr>
-		<td><strong>RFC status</strong></td>
+		<td><strong>﻿RFC status</strong></td>
 		<td><strong>Topic 1</strong></td>
 		<td><strong>Topic 2</strong></td>
 		<td><strong>RFC</strong></td>
 		<td><strong>Title</strong></td>
 		<td><strong>Obsoleted by</strong></td>
+	</tr>
+	<tr>
+		<td>Proposed Standard</td>
+		<td>IDNA/Globalization</td>
+		<td>PKI Application</td>
+		<td><a href="https://www.rfc-editor.org/info/rfc9549">9549</a></td>
+		<td>Internationalization Updates to RFC 5280</td>
+		<td></td>
 	</tr>
 	<tr>
 		<td>Proposed Standard</td>
@@ -66,6 +74,14 @@ Comments or suggestions are extremely welcome!
 		<td></td>
 		<td><a href="https://www.rfc-editor.org/info/rfc9539">9539</a></td>
 		<td>Unilateral Opportunistic Deployment of Encrypted Recursive-to-Authoritative DNS</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>Proposed Standard</td>
+		<td>Name Registration & Protocols</td>
+		<td></td>
+		<td><a href="https://www.rfc-editor.org/info/rfc9537">9537</a></td>
+		<td>Redacted Fields in the Registration Data Access Protocol (RDAP) Response</td>
 		<td></td>
 	</tr>
 	<tr>
@@ -106,6 +122,14 @@ Comments or suggestions are extremely welcome!
 		<td></td>
 		<td><a href="https://www.rfc-editor.org/info/rfc9505">9505</a></td>
 		<td>A Survey of Worldwide Censorship Techniques</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>Best Current Practice</td>
+		<td>Clarification/Terminology</td>
+		<td></td>
+		<td><a href="https://www.rfc-editor.org/info/rfc9499">9499</a></td>
+		<td>DNS Terminology</td>
 		<td></td>
 	</tr>
 	<tr>
@@ -754,7 +778,7 @@ Comments or suggestions are extremely welcome!
 		<td></td>
 		<td><a href="https://www.rfc-editor.org/info/rfc8499">8499</a></td>
 		<td>DNS Terminology</td>
-		<td></td>
+		<td>9499</td>
 	</tr>
 	<tr>
 		<td>Proposed Standard</td>
@@ -1510,7 +1534,7 @@ Comments or suggestions are extremely welcome!
 	</tr>
 	<tr>
 		<td>Proposed Standard</td>
-		<td>DNSSEC - Problem Statement</td>
+		<td>DNSSEC - General Operation</td>
 		<td>Clarification/Terminology</td>
 		<td><a href="https://www.rfc-editor.org/info/rfc6840">6840</a></td>
 		<td>Clarifications and Implementation Notes for DNS Security (DNSSEC)</td>
@@ -2061,12 +2085,20 @@ Comments or suggestions are extremely welcome!
 		<td></td>
 	</tr>
 	<tr>
+		<td>Informational</td>
+		<td>ENUM/DDDS</td>
+		<td>Flaws/Errors & Reporting</td>
+		<td><a href="https://www.rfc-editor.org/info/rfc5483">5483</a></td>
+		<td>ENUM Implementation Issues and Experiences</td>
+		<td></td>
+	</tr>
+	<tr>
 		<td>Proposed Standard</td>
 		<td>Threats/Vulnerabilities & Patches</td>
 		<td>Guidelines/Recommendations</td>
 		<td><a href="https://www.rfc-editor.org/info/rfc5452">5452</a></td>
 		<td>Measures for Making DNS More Resilient against Forged Answers</td>
-		<td></td>
+		<td>6195</td>
 	</tr>
 	<tr>
 		<td>Best Current Practice</td>
@@ -2074,7 +2106,7 @@ Comments or suggestions are extremely welcome!
 		<td></td>
 		<td><a href="https://www.rfc-editor.org/info/rfc5395">5395</a></td>
 		<td>Domain Name System (DNS) IANA Considerations</td>
-		<td>6195</td>
+		<td></td>
 	</tr>
 	<tr>
 		<td>Best Current Practice</td>
@@ -2082,7 +2114,7 @@ Comments or suggestions are extremely welcome!
 		<td></td>
 		<td><a href="https://www.rfc-editor.org/info/rfc5358">5358</a></td>
 		<td>Preventing Use of Recursive Nameservers in Reflector Attacks</td>
-		<td></td>
+		<td>8005</td>
 	</tr>
 	<tr>
 		<td>Experimental</td>
@@ -2090,7 +2122,7 @@ Comments or suggestions are extremely welcome!
 		<td>Other Applications</td>
 		<td><a href="https://www.rfc-editor.org/info/rfc5205">5205</a></td>
 		<td>Host Identity Protocol (HIP) Domain Name System (DNS) Extension</td>
-		<td>8005</td>
+		<td></td>
 	</tr>
 	<tr>
 		<td>Informational</td>
@@ -2114,14 +2146,6 @@ Comments or suggestions are extremely welcome!
 		<td></td>
 		<td><a href="https://www.rfc-editor.org/info/rfc5144">5144</a></td>
 		<td>A Domain Availability Check (DCHK) Registry Type for the Internet Registry Information Service (IRIS)</td>
-		<td></td>
-	</tr>
-	<tr>
-		<td>Informational</td>
-		<td>ENUM/DDDS</td>
-		<td>Flaws/Errors & Reporting</td>
-		<td><a href="https://www.rfc-editor.org/info/rfc5483">5483</a></td>
-		<td>ENUM Implementation Issues and Experiences</td>
 		<td></td>
 	</tr>
 	<tr>

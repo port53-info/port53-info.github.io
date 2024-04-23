@@ -1,11 +1,14 @@
 ﻿RFC status,Topic 1,Topic 2,RFC,Title,Obsoleted by
+Proposed Standard,IDNA/Globalization,PKI Application,9549,Internationalization Updates to RFC 5280,
 Proposed Standard,SRV/SVCB Functionalities,Other Applications,9540,Discovery of Oblivious Services via Service Binding Records,
 Experimental,Encrypted DNS,,9539,Unilateral Opportunistic Deployment of Encrypted Recursive-to-Authoritative DNS,
+Proposed Standard,Name Registration & Protocols,,9537,Redacted Fields in the Registration Data Access Protocol (RDAP) Response,
 Experimental,Other Applications,,9526,Simple Provisioning of Public Names for Residential Networks,
 Proposed Standard,PKI Application,SRV/SVCB Functionalities,9525,Service Identity in TLS,
 Proposed Standard,Servicing,,9520,Negative Caching of DNS Resolution Failures,
 Informational,Other Applications,,9517,A URN Namespace for the Data Documentation Initiative (DDI),
 Informational,Filtering,,9505,A Survey of Worldwide Censorship Techniques,
+Best Current Practice,Clarification/Terminology,,9499,DNS Terminology,
 Informational,Servicing,,9498,The GNU Name System,
 Proposed Standard,Namespace,,9476,The .alt Special-Use Top-Level Domain,
 Proposed Standard,Servicing,Guidelines/Recommendations,9471,DNS Glue Requirements in Referral Responses,
@@ -86,7 +89,7 @@ Proposed Standard,Name Registration & Protocols,,8543,Extensible Provisioning Pr
 Best Current Practice,Name Registration & Protocols,,8521,Registration Data Access Protocol (RDAP) Object Tagging,
 Proposed Standard,DNSSEC - Algorithms/Keys,DNS Root,8509,A Root Key Trust Anchor Sentinel for DNSSEC,
 Informational,Reverse DNS,IPv6 Application,8501,Reverse DNS in IPv6 for Internet Service Providers,
-Best Current Practice,Clarification/Terminology,,8499,DNS Terminology,
+Best Current Practice,Clarification/Terminology,,8499,DNS Terminology,9499
 Proposed Standard,Name Registration & Protocols,,8495,Allocation Token Extension for the Extensible Provisioning Protocol (EPP),
 Proposed Standard,New RRs/Codes,,8490,DNS Stateful Operations,
 Proposed Standard,Encrypted DNS,,8484,DNS Queries over HTTPS (DoH),
@@ -181,7 +184,7 @@ Best Current Practice,Clarification/Terminology,,6895,Domain Name System (DNS) I
 Internet Standard,EDNS & Extensions,,6891,Extension Mechanisms for DNS (EDNS(0)),
 Proposed Standard,PKI Application,New RRs/Codes,6844,DNS Certification Authority Authorization (CAA) Resource Record,8659
 Informational,DNSSEC - General Operation,,6841,A Framework for DNSSEC Policies and DNSSEC Practice Statements,
-Proposed Standard,DNSSEC - Problem Statement,Clarification/Terminology,6840,Clarifications and Implementation Notes for DNS Security (DNSSEC),
+Proposed Standard,DNSSEC - General Operation,Clarification/Terminology,6840,Clarifications and Implementation Notes for DNS Security (DNSSEC),
 Historic,Service Discovery/mDNS,,6804,Supporting Multicast DNS Queries,
 Informational,DNSSEC - General Operation,,6781,"DNSSEC Operational Practices, Version 2",
 Proposed Standard,Service Discovery/mDNS,,6763,DNS-Based Service Discovery,
@@ -250,14 +253,14 @@ Informational,ENUM/DDDS,Reverse DNS,5527,Combined User and Infrastructure ENUM i
 Informational,ENUM/DDDS,,5526,The E.164 to Uniform Resource Identifiers (URI) Dynamic Delegation Discovery System (DDDS) Application for Infrastructure ENUM,
 Proposed Standard,SRV/SVCB Functionalities,,5509,Internet Assigned Numbers Authority (IANA) Registration of Instant Messaging and Presence DNS SRV RRs for the Session Initiation Protocol (SIP),
 Informational,Servicing,Clarification/Terminology,5507,Design Choices When Expanding the DNS,
-Proposed Standard,Threats/Vulnerabilities & Patches,Guidelines/Recommendations,5452,Measures for Making DNS More Resilient against Forged Answers,
-Best Current Practice,Clarification/Terminology,,5395,Domain Name System (DNS) IANA Considerations,6195
-Best Current Practice,Threats/Vulnerabilities & Patches,,5358,Preventing Use of Recursive Nameservers in Reflector Attacks,
-Experimental,New RRs/Codes,Other Applications,5205,Host Identity Protocol (HIP) Domain Name System (DNS) Extension,8005
+Informational,ENUM/DDDS,Flaws/Errors & Reporting,5483,ENUM Implementation Issues and Experiences,
+Proposed Standard,Threats/Vulnerabilities & Patches,Guidelines/Recommendations,5452,Measures for Making DNS More Resilient against Forged Answers,6195
+Best Current Practice,Clarification/Terminology,,5395,Domain Name System (DNS) IANA Considerations,
+Best Current Practice,Threats/Vulnerabilities & Patches,,5358,Preventing Use of Recursive Nameservers in Reflector Attacks,8005
+Experimental,New RRs/Codes,Other Applications,5205,Host Identity Protocol (HIP) Domain Name System (DNS) Extension,
 Informational,IPv6 Application,Reverse DNS,5158,6to4 Reverse DNS Delegation Specification,
 Proposed Standard,DNSSEC - General Operation,,5155,DNS Security (DNSSEC) Hashed Authenticated Denial of Existence,
 Proposed Standard,Name Registration & Protocols,,5144,A Domain Availability Check (DCHK) Registry Type for the Internet Registry Information Service (IRIS),
-Informational,ENUM/DDDS,Flaws/Errors & Reporting,5483,ENUM Implementation Issues and Experiences,
 Proposed Standard,ENUM/DDDS,Name Registration & Protocols,5076,ENUM Validation Information Mapping for the Extensible Provisioning Protocol,
 Historic,DNSSEC - Others,,5074,DNSSEC Lookaside Validation (DLV),
 Proposed Standard,IPv6 Application,,5026,Mobile IPv6 Bootstrapping in Split Scenario,
