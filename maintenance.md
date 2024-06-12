@@ -16,7 +16,9 @@
 # 目录结构及维护
 1. src: 包含了用于将数据生成静态HTML内容的代码，该部分不是网站生成原生项目
    1. csv2html.py：用于将RFC列表的CSV内容转化成HTML表单；生成的内容自动替换目标HTML网页
+      该文件用于更新RFC列表页面内容，在飞书将最新的数据，去除无用列，下载保存为CSV格式并按照src/data_template.csv的格式进行规整，随后运行该Python脚本会自动完成RFC列表页面的数据内容更新。
    2. status.ipynb：用于转化`Open Encrypted DNS Servers`页面内图标所需数据的代码
+      将原始数据相关的json文件放置于同目录下，依次执行cell；相关输出用于直接替换data/Open encrypted DNS Servers/index.md中的数据；输出的内容为`变量名:数据内容`的格式，将输出的数据替换掉data/Open encrypted DNS Servers/index.md中对应变量名的数据内容即可完成更新；同时需要将提供下载的文件放在files/目录下，并修改data/Open encrypted DNS Servers/index.md最后markdown表格中的文件名与链接指向。
 
 2. public：Hugo生成后的文件夹，即静态网站文件目录
 3. imags：存放图片文件（目前没用到）
