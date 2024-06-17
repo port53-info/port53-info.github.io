@@ -1,8 +1,12 @@
-﻿RFC status,Topic 1,Topic 2,RFC,Title,Obsoleted by
+﻿Tag 1 (RFC status),Tag 3 (Topic 1),Tag 4 (Topic 2),RFC,Title,Obsoleted by
+Proposed Standard,Servicing,,9567,DNS Error Reporting,
+Proposed Standard,Name Registration & Protocols,,9560,Federated Authentication for the Registration Data Access Protocol (RDAP) Using OpenID Connect,
+Informational,DNSSEC - Algorithms/Keys,,9558,Use of GOST 2012 Signature Algorithms in DNSKEY and RRSIG Resource Records for DNSSEC,
 Proposed Standard,IDNA/Globalization,PKI Application,9549,Internationalization Updates to RFC 5280,
 Proposed Standard,SRV/SVCB Functionalities,Other Applications,9540,Discovery of Oblivious Services via Service Binding Records,
 Experimental,Encrypted DNS,,9539,Unilateral Opportunistic Deployment of Encrypted Recursive-to-Authoritative DNS,
 Proposed Standard,Name Registration & Protocols,,9537,Redacted Fields in the Registration Data Access Protocol (RDAP) Response,
+Proposed Standard,Name Registration & Protocols,,9536,Registration Data Access Protocol (RDAP) Reverse Search,
 Experimental,Other Applications,,9526,Simple Provisioning of Public Names for Residential Networks,
 Proposed Standard,PKI Application,SRV/SVCB Functionalities,9525,Service Identity in TLS,
 Proposed Standard,Servicing,,9520,Negative Caching of DNS Resolution Failures,

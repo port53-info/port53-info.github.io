@@ -1,7 +1,7 @@
 ---
 # Leave the homepage title empty to use the site title
 title: About
-date: 2024-2-16
+date: 2024-6-17
 type: landing
 
 sections:
@@ -23,18 +23,13 @@ sections:
           - Junzhe Sun, undergraduate student, Beijing University of Posts and Telecommunications
           - Jiasheng Huang, undergraduate student, Tsinghua University
         ## Updates
+          - [Jun 2024] Topic-oriented repository of DNS-related RFCs updated.
           - [Apr 2024] Monthly scan results of open encrypted DNS servers updated.
-          - [Apr 2024] Topic-oriented repository of DNS-related RFCs updated.
-          - [Mar 2024] Monthly scan results of open encrypted DNS servers updated.
-          - [Mar 2024] Topic-oriented repository of DNS-related RFCs updated.
-          - [Jan 2024] Monthly scan results of open encrypted DNS servers updated.
-          - [Dec 2023] Monthly scan results of open encrypted DNS servers updated.
-          - [Dec 2023] Topic-oriented repository of DNS-related RFCs updated.
           - [Nov 2023] New data available: monthly scan results of open encrypted DNS servers.
           - [Nov 2023] New material available: topic-oriented repository of DNS-related RFCs.
           - [Nov 2023] Our website is on!
 
-        (Last modified: Arp 20, 2024)
+        (Last modified: Jun 17, 2024)
     design:
       columns: '1'
         
