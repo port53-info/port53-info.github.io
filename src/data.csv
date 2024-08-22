@@ -1,4 +1,7 @@
 ﻿Tag 1 (RFC status),Tag 3 (Topic 1),Tag 4 (Topic 2),RFC,Title,Obsoleted by
+Proposed Standard,Servicing,,9619,"In the DNS, QDCOUNT Is (Usually) One",
+Proposed Standard,DNSSEC - General Operation,,9615,Automatic DNSSEC Bootstrapping Using Authenticated Signals from the Zone's Operator,
+Proposed Standard,Servicing,New RRs/Codes,9606,DNS Resolver Information,
 Proposed Standard,Servicing,,9567,DNS Error Reporting,
 Proposed Standard,Name Registration & Protocols,,9560,Federated Authentication for the Registration Data Access Protocol (RDAP) Using OpenID Connect,
 Informational,DNSSEC - Algorithms/Keys,,9558,Use of GOST 2012 Signature Algorithms in DNSKEY and RRSIG Resource Records for DNSSEC,
