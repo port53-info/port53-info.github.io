@@ -56,6 +56,30 @@ Comments or suggestions are extremely welcome!
 		<td>Proposed Standard</td>
 		<td>Servicing</td>
 		<td></td>
+		<td><a href="https://www.rfc-editor.org/info/rfc9619">9619</a></td>
+		<td>In the DNS, QDCOUNT Is (Usually) One</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>Proposed Standard</td>
+		<td>DNSSEC - General Operation</td>
+		<td></td>
+		<td><a href="https://www.rfc-editor.org/info/rfc9615">9615</a></td>
+		<td>Automatic DNSSEC Bootstrapping Using Authenticated Signals from the Zone's Operator</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>Proposed Standard</td>
+		<td>Servicing</td>
+		<td>New RRs/Codes</td>
+		<td><a href="https://www.rfc-editor.org/info/rfc9606">9606</a></td>
+		<td>DNS Resolver Information</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>Proposed Standard</td>
+		<td>Servicing</td>
+		<td></td>
 		<td><a href="https://www.rfc-editor.org/info/rfc9567">9567</a></td>
 		<td>DNS Error Reporting</td>
 		<td></td>
