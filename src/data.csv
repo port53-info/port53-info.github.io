@@ -1,4 +1,5 @@
 ﻿Tag 1 (RFC status),Tag 3 (Topic 1),Tag 4 (Topic 2),RFC,Title,Obsoleted by
+Proposed Standard,Servicing,,9660,The DNS Zone Version (ZONEVERSION) Option,
 Proposed Standard,Servicing,,9619,"In the DNS, QDCOUNT Is (Usually) One",
 Proposed Standard,DNSSEC - General Operation,,9615,Automatic DNSSEC Bootstrapping Using Authenticated Signals from the Zone's Operator,
 Proposed Standard,Servicing,New RRs/Codes,9606,DNS Resolver Information,

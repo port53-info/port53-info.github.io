@@ -1,7 +1,7 @@
 ---
 # Leave the homepage title empty to use the site title
 title: About
-date: 2024-8-22
+date: 2024-10-20
 type: landing
 
 sections:
@@ -21,13 +21,13 @@ sections:
           - Ruixuan Li, master student, Zhejiang Gongshang University
           - Junzhe Sun, undergraduate student, Beijing University of Posts and Telecommunications
         ## Updates
-          - [Aug 2024] Topic-oriented repository of DNS-related RFCs updated.
-          - [Apr 2024] Monthly scan results of open encrypted DNS servers updated.
-          - [Nov 2023] New data available: monthly scan results of open encrypted DNS servers.
+          - [Oct 2024] Topic-oriented repository of DNS-related RFCs updated.
+          - [Apr 2024] Scan results of open encrypted DNS servers updated.
+          - [Nov 2023] New data available: scan results of open encrypted DNS servers.
           - [Nov 2023] New material available: topic-oriented repository of DNS-related RFCs.
           - [Nov 2023] Our website is on!
 
-        (Last modified: Aug 22, 2024)
+        (Last modified: Oct 20, 2024)
     design:
       columns: '1'
         

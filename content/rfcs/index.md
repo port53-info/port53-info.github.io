@@ -56,6 +56,14 @@ Comments or suggestions are extremely welcome!
 		<td>Proposed Standard</td>
 		<td>Servicing</td>
 		<td></td>
+		<td><a href="https://www.rfc-editor.org/info/rfc9660">9660</a></td>
+		<td>The DNS Zone Version (ZONEVERSION) Option</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>Proposed Standard</td>
+		<td>Servicing</td>
+		<td></td>
 		<td><a href="https://www.rfc-editor.org/info/rfc9619">9619</a></td>
 		<td>In the DNS, QDCOUNT Is (Usually) One</td>
 		<td></td>
